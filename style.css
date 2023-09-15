@@ -1,0 +1,32 @@
+header {
+    position: fixed;
+    top: 0;
+    left: 0;
+    right: 0;
+    height: fit-content;
+}
+
+.navbar-brand,
+.nav-link {
+    color: white !important;
+}
+
+.navbar-brand {
+    font-size: large;
+}
+
+.navbar-toggler-icon {
+    padding: 2px;
+    background-image: none !important;
+}
+
+.navbar-toggler {
+    margin-right: 3px;
+    margin-bottom: 2.5px;
+    padding: 0 !important;
+    border: none !important;
+}
+
+.navbar-toggler:focus {
+    box-shadow: none;
+}
