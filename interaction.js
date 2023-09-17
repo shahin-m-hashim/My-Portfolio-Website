@@ -4,7 +4,7 @@ window.onload =function()
 }
 
 
-// website-tagline-txt
+//  website-tagline-txt
 var typed1 = new Typed('#slog-txt1', {
     strings: ['Websites, Images And Videos'],
     typeSpeed: 100,
@@ -18,4 +18,19 @@ var typed2 = new Typed('#slog-txt2', {
     typeSpeed: 150,
     backSpeed: 110,
     loop: true
+});
+
+//section 2 about 
+ScrollReveal().reveal('.scroll-reveal', {
+    delay:100,
+    reset:true,
+    duration: 550,
+    origin: 'top',
+    easing: 'ease',
+    distance:'150px',
+        rotate: {
+        x: 180,
+        y: -90,
+        z: 180
+    }
 });

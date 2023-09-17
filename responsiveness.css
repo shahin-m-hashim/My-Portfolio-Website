@@ -49,12 +49,40 @@
         padding: 10px 30px;
     }
 
-    #section-1-img {
+    #section-1-img-container {
         padding-top: 0;
-        margin-top: 70px;
+        margin: 100px 0;
+    }
+
+    #section-1-img-container img {
+        width: 80%;
+    }
+
+    /* section 2 */
+
+    .section-2 {
+        margin-top: 200px;
+    }
+
+    #sec2-abt-txt {
+        font-size: 3.5vw;
+    }
+
+    #sec2-greeting-txt {
+        font-size: 6vw;
+        font-weight: 800;
+        padding-left: 5px;
+    }
+
+    .section-2 p {
+        font-size: 2.5vw;
+        padding-left: 5px;
+    }
+
+    #sec2-br-toggle {
+        display: none;
     }
 }
-
 
 @media only screen and (width<=300px) {
 

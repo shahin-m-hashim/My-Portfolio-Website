@@ -1,9 +1,11 @@
+/* header navbar */
 header {
     position: fixed;
     top: 0;
     left: 0;
     right: 0;
     height: fit-content;
+    z-index: 1;
 }
 
 .navbar-brand,
@@ -31,6 +33,7 @@ header {
     box-shadow: none;
 }
 
+/* section-1 */
 .website-tagline-txt {
     text-align: center;
     color: white;
@@ -91,8 +94,41 @@ header {
     border: none;
 }
 
-#section-1-img {
+#section-1-img-container {
     display: flex;
     justify-content: center;
     align-items: center;
+}
+
+#section-1-img-container img {
+    width: 100%;
+    padding-top: 20px;
+}
+
+/* section-2*/
+.section-2 {
+    margin-top: 300px;
+    padding: 0 30px;
+}
+
+.about-me {
+    color: #ccff00;
+}
+
+#sec2-abt-txt {
+    font-size: 2.5vw;
+    font-weight: 400;
+    padding-left: 5px;
+}
+
+#sec2-greeting-txt {
+    font-size: 7vw;
+    font-weight: 800;
+}
+
+.section-2 p {
+    font-size: 2.5vw;
+    font-weight: 300;
+    padding-left: 10px;
+    padding-right: 15px;
 }
