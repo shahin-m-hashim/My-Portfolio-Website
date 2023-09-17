@@ -34,3 +34,13 @@ ScrollReveal().reveal('.scroll-reveal', {
         z: 180
     }
 });
+
+//section 2 character
+ScrollReveal().reveal('.scroll-reveal-character-heading', {
+    delay:100,
+    reset:true,
+    duration: 400,
+    origin: 'top',
+    easing: 'ease',
+    distance:'150px',
+});
