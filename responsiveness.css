@@ -1,7 +1,9 @@
 /* Customize the behavior for navbar */
 @media only screen and (orientation: landscape) {
+
+    /* header navbar */
     .navbar-expand-lg .navbar-toggler {
-        display: none;
+        display: none !important;
     }
 
     .navbar-expand-lg .navbar-collapse {
@@ -12,14 +14,51 @@
     .navbar-expand-lg .navbar-nav {
         flex-direction: row;
     }
+}
 
-    .navbar-expand-lg .navbar-nav .nav-link {
-        padding-right: var(--bs-navbar-nav-link-padding-x);
-        padding-left: var(--bs-navbar-nav-link-padding-x);
+@media only screen and (orientation: portrait) {
+
+    /* section 1 */
+    .website-tagline-txt {
+        font-size: 2.5vw;
+        margin-bottom: 40px;
+    }
+
+    .introduction {
+        grid-template-columns: 1fr;
+        margin-left: 5px;
+    }
+
+    .introduction #intro-text {
+        font-size: 6vw;
+        padding-left: 0.7vw;
+    }
+
+    .introduction #intro-name {
+        font-size: 17vw;
+    }
+
+    .introduction #intro-description {
+        font-size: 4.5vw;
+        font-weight: 400;
+        width: auto;
+    }
+
+    #resume-link button {
+        font-size: 20px;
+        padding: 10px 30px;
+    }
+
+    #section-1-img {
+        padding-top: 0;
+        margin-top: 70px;
     }
 }
 
+
 @media only screen and (width<=300px) {
+
+    /* header navbar */
     .navbar-brand {
         font-size: medium;
     }
