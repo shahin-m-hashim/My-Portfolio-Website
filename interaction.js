@@ -44,3 +44,7 @@ ScrollReveal().reveal('.scroll-reveal-character-heading', {
     easing: 'ease',
     distance:'150px',
 });
+
+ScrollOut({
+targets:'.pb-scroll-out h1,.pb-scroll-out h2,.pb-scroll-out h3'
+});
