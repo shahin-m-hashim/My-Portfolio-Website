@@ -258,3 +258,88 @@ header {
     font-size: 2.2vw;
     font-weight: 300;
 }
+
+/* section 3 */
+
+.section-3 {
+    margin-top: 350px;
+    display: grid;
+    grid-template-columns: 1fr 1.2fr;
+    column-gap: 10px;
+    padding: 0 20px;
+}
+
+.section-3 .column-1 #row-1 h1 {
+    font-size: 3vw;
+}
+
+.section-3 .column-1 #row-1 h2 {
+    font-size: 1.6vw;
+}
+
+.section-3 .column-1 #row-1 h3 {
+    font-size: 1.3vw;
+}
+
+.section-3 .column-1 #row-1 h4 {
+    font-size: 1.2vw;
+}
+
+.section-3 .column-1 #row-1 ul {
+    font-size: 1.3vw;
+}
+
+.section-3 .column-1 #row-2 h1 {
+    font-size: 2.7vw;
+}
+
+.section-3 .column-1 #row-2 ol {
+    font-size: 1.3vw;
+}
+
+.section-3 .column-2 h1 {
+    font-size: 2.8vw;
+}
+
+/* sec3 skills progress bar */
+
+.skills-container {
+    display: grid;
+    grid-template-columns: 1fr 1fr 1fr;
+    row-gap: 30px;
+    text-align: center;
+    column-gap: 10px;
+}
+
+
+svg.radial-progress {
+    padding: 0;
+    transform: rotate(-90deg);
+    width: 50%;
+    background-color: rgb(29, 29, 28);
+    border-radius: 50%;
+}
+
+svg.radial-progress circle {
+    fill: transparent;
+    stroke: #fff;
+}
+
+svg.radial-progress circle.bar-static {
+    stroke: #00ffee !important;
+    stroke-width: 10px;
+}
+
+svg.radial-progress circle.bar--animated {
+    stroke-dasharray: 219.91148575129;
+    stroke: #001aff;
+    stroke-dashoffset: 219.91148575129;
+    stroke-width: 4px;
+    stroke-linecap: round;
+}
+
+svg.radial-progress text {
+    fill: #ccff00;
+    text-anchor: middle;
+    text-shadow: 0 0 5px #0000007a;
+}
