@@ -1,9 +1,11 @@
+/* header navbar */
 header {
     position: fixed;
     top: 0;
     left: 0;
     right: 0;
     height: fit-content;
+    z-index: 1;
 }
 
 .navbar-brand,
@@ -31,6 +33,7 @@ header {
     box-shadow: none;
 }
 
+/* section-1 */
 .website-tagline-txt {
     text-align: center;
     color: white;
@@ -55,7 +58,7 @@ header {
 }
 
 .introduction #intro-name {
-    font-size: 12vw;
+    font-size: 11vw;
     font-weight: 700;
     color: transparent;
     -webkit-text-stroke: 2px white;
@@ -73,7 +76,7 @@ header {
 
 .introduction #intro-description {
     padding-left: 5px;
-    font-size: 2.3vw;
+    font-size: 2vw;
     font-weight: 400;
 }
 
@@ -83,16 +86,591 @@ header {
 }
 
 #resume-link button {
-    font-size: 25px;
+    font-size: 1.7vw;
     font-weight: 600;
-    padding: 15px 40px;
+    padding: 10px 25px;
     background-color: rgb(84, 170, 224);
     color: white;
     border: none;
 }
 
-#section-1-img {
+#section-1-img-container {
     display: flex;
     justify-content: center;
     align-items: center;
+}
+
+#section-1-img-container img {
+    width: 100%;
+    padding-top: 20px;
+}
+
+/* section-2*/
+.section-2 {
+    margin-top: 350px;
+}
+
+.about-me {
+    margin-bottom: 200px;
+    color: #ccff00;
+}
+
+#sec2-abt-txt {
+    font-size: 2.5vw;
+    font-weight: 400;
+    padding-left: 5px;
+}
+
+#sec2-greeting-txt {
+    font-size: 7vw;
+    font-weight: 800;
+}
+
+.section-2 p {
+    font-size: 2.5vw;
+    font-weight: 300;
+    padding-left: 10px;
+    padding-right: 15px;
+}
+
+/* section 2 character */
+.character-container #heading {
+    font-size: 5vw;
+    font-weight: 500;
+}
+
+.character {
+    display: grid;
+    margin-top: 60px;
+    padding: 0 20px;
+    align-items: start;
+    grid-template-columns: 1.3fr 5fr;
+}
+
+.character ul {
+    font-size: 2vw;
+    padding-left: 50px;
+}
+
+.character #description div {
+    font-size: 2.15vw;
+}
+
+.personal-background {
+    margin-top: 200px;
+    display: grid;
+    column-gap: 50px;
+    grid-template-columns: 1fr 1fr;
+}
+
+/* Education */
+
+.pb-education h1 {
+    font-size: 4.3vw;
+}
+
+.pb-education div {
+    padding-left: 2px;
+    font-size: 1.7vw;
+}
+
+/* Interests */
+
+.pb-scroll-out h1 {
+    font-size: 2.8vw;
+    transition: 0.5s;
+    padding-left: 10px;
+    transform-origin: left;
+    transform: scaleX(0);
+}
+
+.pb-scroll-out h2,
+.pb-scroll-out h3 {
+    transition: 0.5s;
+    transform-origin: right;
+    transform: scaleX(0);
+}
+
+.pb-scroll-out .interests #grid-container {
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    column-gap: 20px;
+    padding-left: 5px;
+}
+
+.pb-scroll-out #interest {
+    padding: 20px 0;
+    padding-left: 10px !important;
+    font-size: 2.3vw;
+    color: #ccff00;
+}
+
+.pb-scroll-out .interests h1[data-scroll='in'],
+.pb-scroll-out .interests h2[data-scroll='in'],
+.pb-scroll-out .interests h3[data-scroll='in'] {
+    transform: scaleX(1);
+}
+
+.pb-scroll-out .interests h1[data-scroll='in']:before,
+.pb-scroll-out .interests h2[data-scroll='in']:before,
+.pb-scroll-out .interests h3[data-scroll='in']:before {
+    transform: scaleX(1);
+    transition-delay: 0.5s;
+}
+
+.pb-scroll-out h1:before,
+.pb-scroll-out h2:before,
+.pb-scroll-out h3:before {
+    content: '';
+    z-index: -3;
+    position: absolute;
+    top: 0;
+    left: 0;
+    height: 100%;
+    transition: 0.5s;
+}
+
+.pb-scroll-out h1:before {
+    width: 40%;
+    transform-origin: right;
+    background: #ecdc48;
+}
+
+.pb-scroll-out h2:before,
+.pb-scroll-out h3:before {
+    width: 100%;
+    transform-origin: left;
+    background: #3451f5;
+}
+
+.pb-scroll-out h3:before {
+    background: #d327f1;
+}
+
+
+/* Languages Known */
+
+.lang h1 {
+    font-size: 2.3vw;
+}
+
+.lang div {
+    font-size: 2.2vw;
+    font-weight: 300;
+}
+
+/* section 3 */
+
+.section-3 {
+    margin-top: 350px;
+    display: grid;
+    grid-template-columns: 1fr 1.2fr;
+    column-gap: 10px;
+}
+
+.section-3 .column-1 #row-1 h1 {
+    font-size: 3vw;
+}
+
+.section-3 .column-1 #row-1 h2 {
+    font-size: 1.6vw;
+}
+
+.section-3 .column-1 #row-1 h3 {
+    font-size: 1.3vw;
+}
+
+.section-3 .column-1 #row-1 h4 {
+    font-size: 1.2vw;
+}
+
+.section-3 .column-1 #row-1 ul {
+    font-size: 1.3vw;
+}
+
+.section-3 .column-1 #row-2 h1 {
+    font-size: 2.7vw;
+}
+
+.section-3 .column-1 #row-2 ol {
+    font-size: 1.3vw;
+}
+
+.section-3 .column-2 h1 {
+    font-size: 2.8vw;
+}
+
+/* sec3 skills progress bar */
+
+.skills-container {
+    display: grid;
+    grid-template-columns: 1fr 1fr 1fr;
+    row-gap: 30px;
+    text-align: center;
+    column-gap: 10px;
+}
+
+
+svg.radial-progress {
+    padding: 0;
+    transform: rotate(-90deg);
+    width: 50%;
+    background-color: rgb(29, 29, 28);
+    border-radius: 50%;
+}
+
+svg.radial-progress circle {
+    fill: transparent;
+    stroke: #fff;
+}
+
+svg.radial-progress circle.bar-static {
+    stroke: #00ffee !important;
+    stroke-width: 10px;
+}
+
+svg.radial-progress circle.bar--animated {
+    stroke-dasharray: 219.91148575129;
+    stroke: #001aff;
+    stroke-dashoffset: 219.91148575129;
+    stroke-width: 4px;
+    stroke-linecap: round;
+}
+
+svg.radial-progress text {
+    fill: #ccff00;
+    text-anchor: middle;
+    text-shadow: 0 0 5px #0000007a;
+}
+
+/* section 4 */
+
+.section-4 {
+    margin-top: 350px;
+}
+
+.section-4 #slideshow-container {
+    padding-top: 50px;
+}
+
+/* PROJECT SLIDING */
+
+.project-container {
+    max-width: fit-content;
+    position: relative;
+    margin: auto;
+}
+
+#pr-link {
+    text-decoration: none;
+}
+
+/* Hide the images by default */
+.Slide {
+    display: none;
+}
+
+/* Next & previous buttons */
+.prev,
+.next {
+    cursor: pointer;
+    position: absolute;
+    top: 43%;
+    padding: 1vw;
+    color: rgb(255, 255, 255);
+    font-weight: bold;
+    font-size: 1.2vw;
+    background-color: rgb(0, 128, 255);
+    transition: 0.6s ease;
+    user-select: none;
+    text-decoration: none;
+}
+
+/* Position the next and previous buttons */
+.prev {
+    left: 0;
+}
+
+.next {
+    right: 0;
+}
+
+.prev:hover,
+.next:hover {
+    background-color: rgba(0, 0, 0, 0.8);
+}
+
+/* Caption text */
+.pr-title {
+    width: 100%;
+    background-color: rgb(0, 191, 255);
+    text-align: center;
+    color: white;
+    font-size: 2.5vw;
+    font-weight: 500;
+    padding: 5px 0;
+}
+
+.numbertext {
+    color: #ff0000;
+    background-color: rgb(51, 255, 0);
+    background-size: 10px;
+    font-size: 2vw;
+    font-weight: bold;
+    padding: 0.5vw;
+    position: absolute;
+    top: 0;
+    left: 0;
+}
+
+/* The dots/bullets/indicators */
+.dot {
+    cursor: pointer;
+    height: 0.7vw;
+    width: 0.7vw;
+    margin: 0 5px;
+    background-color: rgb(0, 255, 0);
+    border-radius: 50%;
+    display: inline-block;
+    transition: background-color 0.6s ease;
+}
+
+.active,
+.dot:hover {
+    background-color: #0011ff;
+}
+
+/* Fading animation */
+.fade {
+    animation-name: fade;
+    animation-duration: 1.2s;
+}
+
+@keyframes fade {
+    from {
+        opacity: 0.3
+    }
+
+    to {
+        opacity: 1
+    }
+}
+
+.fade:not(.show) {
+    opacity: 1;
+}
+
+
+/* section 5 */
+:root {
+    --grey: #D3D3D3;
+    --facebook: #3b5999;
+    --twitter: #55acee;
+    --github: #2b3137;
+    --linkedin: #0077B5;
+}
+
+.section-5 {
+    margin-top: 300px;
+}
+
+.section-5 h1 {
+    font-size: 4.5vw;
+}
+
+.section-5 h3 {
+    font-size: 3vw;
+}
+
+.section-5 .social-container {
+    display: flex;
+    padding: 50px 0;
+    align-items: center;
+    justify-content: space-around;
+}
+
+.section-5 .social-container #github-link,
+.section-5 .social-container #linkedin-link,
+.section-5 .social-container #instagram-link {
+    position: relative;
+    background: #808080;
+    text-align: center;
+    transform: perspective(1000px) rotate(-30deg) skew(25deg) translate(0, 0);
+    transition: .5s;
+    box-shadow: -30px 30px 10px rgba(0, 0, 0, .5);
+    width: 100px;
+    height: 100px;
+}
+
+.section-5 .social-container #github-link svg,
+.section-5 .social-container #linkedin-link svg,
+.section-5 .social-container #instagram-link svg {
+    width: 100%;
+    height: 100%;
+    padding: 10px;
+}
+
+.section-5 .social-container #github-link:before,
+.section-5 .social-container #linkedin-link:before,
+.section-5 .social-container #instagram-link:before {
+    content: '';
+    position: absolute;
+    top: 10px;
+    left: -20px;
+    height: 100%;
+    width: 20px;
+    background: #93a092;
+    transition: .5s;
+    transform: rotate(0deg) skewY(-45deg);
+}
+
+.section-5 .social-container #github-link:after,
+.section-5 .social-container #linkedin-link:after,
+.section-5 .social-container #instagram-link:after {
+    content: '';
+    position: absolute;
+    bottom: -20px;
+    left: -10px;
+    height: 20px;
+    width: 100%;
+    background: var(--grey);
+    transition: .5s;
+    transform: rotate(0deg) skewX(-45deg);
+}
+
+.section-5 .social-container #github-link:hover,
+.section-5 .social-container #linkedin-link:hover,
+.section-5 .social-container #instagram-link:hover {
+    transform: perspective(1000px) rotate(-30deg) skew(25deg) translate(20px, -20px);
+    box-shadow: -50px 50px 50px rgba(0, 0, 0, .5);
+}
+
+/* Github Link */
+.section-5 .social-container #github-link:hover {
+    transition: .5s ease;
+    background-color: var(--github);
+}
+
+.section-5 .social-container #github-link:hover svg {
+    fill: white;
+    transition: .5s;
+}
+
+.section-5 .social-container #github-link:hover:before {
+    transition: .5s;
+    background: var(--github);
+}
+
+.section-5 .social-container #github-link:hover:after {
+    transition: .5s;
+    background: var(--github);
+}
+
+/* LinkedIn Link */
+
+.section-5 .social-container #linkedin-link:hover {
+    transition: .5s ease;
+    background: var(--linkedin);
+}
+
+.section-5 .social-container #linkedin-link:hover svg {
+    fill: white;
+    transition: .5s;
+}
+
+.section-5 .social-container #linkedin-link:hover:before {
+    transition: .5s;
+    background: var(--linkedin);
+}
+
+.section-5 .social-container #linkedin-link:hover:after {
+    transition: .5s;
+    background: var(--linkedin);
+}
+
+/* Instagram Link */
+
+.section-5 .social-container #instagram-link:hover {
+    background: linear-gradient(45deg, #feda75 10%, #fa7e1e 25%, #d62976 40%, #962fbf 60%, #4f5bd5 75%);
+    transition: .5s ease;
+}
+
+.section-5 .social-container #instagram-link:hover svg {
+    fill: white;
+    transition: .5s;
+}
+
+.section-5 .social-container #instagram-link:hover:before {
+    background: linear-gradient(45deg, #feda75 10%, #fa7e1e 25%, #d62976 40%, #962fbf 60%, #4f5bd5 75%);
+    transition: .5s;
+}
+
+.section-5 .social-container #instagram-link:hover:after {
+    background: linear-gradient(45deg, #feda75 10%, #fa7e1e 25%, #d62976 40%, #962fbf 60%, #4f5bd5 75%);
+    transition: .5s;
+}
+
+/* section-5 end msg */
+
+.section-5 .end-msg {
+    margin-top: 200px;
+}
+
+.section-5 .end-msg h4 {
+    font-size: 4vw;
+}
+
+.section-5 .end-msg h2 {
+    font-weight: 200;
+    font-size: 4.5vw;
+}
+
+/* section-5 email */
+a#email-me {
+    font-size: 5vw;
+    font-weight: 500;
+    background-image: linear-gradient(to right, #ff0000 10%, #00bbff 50%, #000dff 50%);
+    background-size: 200% 100%;
+    background-position: -100%;
+    position: relative;
+    background-clip: text;
+    -webkit-background-clip: text;
+    -webkit-text-fill-color: transparent;
+    transition: all 0.5s ease-in-out, transform-origin 0s, font-weight 0s;
+}
+
+a#email-me:before {
+    content: '';
+    background-color: red;
+    position: absolute;
+    bottom: 0;
+    left: 0;
+    width: 0;
+    height: 5px;
+    transition: all 0.3s ease-in-out;
+}
+
+a#email-me:hover {
+    margin-left: 5px;
+    background-position: 0;
+    font-size: 6.5vw;
+    transform-origin: left;
+    font-weight: 700;
+}
+
+a#email-me:hover::before {
+    width: 100%;
+}
+
+/* footer */
+
+footer {
+    margin-top: 150px;
+    margin-bottom: 1rem;
+}
+
+footer h6 {
+    font-size: 1vw;
+    text-align: center;
+    transform: none;
 }
