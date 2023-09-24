@@ -661,3 +661,16 @@ a#email-me:hover {
 a#email-me:hover::before {
     width: 100%;
 }
+
+/* footer */
+
+footer {
+    margin-top: 150px;
+    margin-bottom: 1rem;
+}
+
+footer h6 {
+    font-size: 1vw;
+    text-align: center;
+    transform: none;
+}
