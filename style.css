@@ -1,3 +1,48 @@
+* {
+    padding: 0;
+    margin: 0;
+    scroll-behavior: smooth;
+}
+
+:root {
+    --bg-color: #270622;
+    --second-bg-color: #292e33;
+    --hover-color: #12f7ff;
+    --neon-box-shadow: 0 0 .5rem #12f7ff;
+    --font-neon-text-shadow: 0 0 10px rgba(18, 247, 255, 0.3),
+        0 0 20px rgba(18, 247, 255, 0.3),
+        0 0 30px rgba(18, 247, 255, 0.3),
+        0 0 40px rgba(18, 247, 255, 0.3),
+        0 0 70px rgba(18, 247, 255, 0.3),
+        0 0 80px rgba(18, 247, 255, 0.3),
+        0 0 100px rgba(18, 247, 255, 0.3),
+        0 0 150px rgba(18, 247, 255, 0.3);
+}
+
+body {
+    font-family: Roboto;
+    color: white;
+    background-color: var(--bg-color);
+}
+
+section {
+    padding: 5%;
+    margin: 0 !important;
+}
+
+.section-1,
+.section-3,
+.section-5 {
+    background-color: var(--bg-color);
+    transition: background-color 0.5s ease-in-out;
+}
+
+.section-2,
+.section-4 {
+    background-color: var(--second-bg-color);
+    transition: background-color 0.5s ease-in-out;
+}
+
 /* header navbar */
 header {
     position: fixed;
@@ -5,7 +50,7 @@ header {
     left: 0;
     right: 0;
     height: fit-content;
-    z-index: 1;
+    z-index: 5;
 }
 
 .navbar-brand,
@@ -33,20 +78,24 @@ header {
     box-shadow: none;
 }
 
-/* section-1 */
+/* website tagline */
 .website-tagline-txt {
     text-align: center;
     color: white;
+    font-size: 1.7vw;
     font-weight: 400;
-    margin-top: 25px;
-    margin-bottom: 30px;
+    margin: 30px 0;
 }
 
+/* section-1 */
+
+.section-1 {
+    padding-bottom: 400px;
+}
 
 .introduction {
     display: grid;
-    grid-template-columns: 1fr 1fr;
-    margin-left: 20px;
+    grid-template-columns: 1.3fr 1fr;
     color: #ccff00;
 }
 
@@ -76,22 +125,80 @@ header {
 
 .introduction #intro-description {
     padding-left: 5px;
-    font-size: 2vw;
+}
+
+.introduction #intro-description h3 {
+    font-size: 2.5vw;
     font-weight: 400;
+    display: inline-flex;
+    vertical-align: top;
+}
+
+.change-text h3 .word {
+    position: absolute;
+    display: flex;
+    opacity: 0;
+}
+
+.change-text h3 .word .letter {
+    transform-origin: center center 25px;
+}
+
+.change-text h3 .word .letter.out {
+    transform: rotateX(90deg);
+    transition: 0.32s cubic-bezier (0.6, 0, 0.7, 0.2);
+}
+
+.change-text h3 .word .letter.in {
+    transition: 0.38s ease;
+}
+
+.change-text h3 .word .letter.behind {
+    transform: rotateX(-90deg);
 }
 
 #resume-link {
     margin-top: 30px;
-    margin-left: 8px;
+    margin-left: 5px;
 }
 
-#resume-link button {
-    font-size: 1.7vw;
+#resume-link a.btn {
+    display: inline-flex;
+    justify-content: center;
+    align-items: center;
+    padding: 8px 12px;
+    font-size: 1.5vw;
     font-weight: 600;
-    padding: 10px 25px;
-    background-color: rgb(84, 170, 224);
-    color: white;
-    border: none;
+    background-color: var(--hover-color);
+    color: var(--bg-color);
+    transition: .6s;
+    box-shadow: var(--neon-box-shadow);
+    border-radius: 5px;
+    position: relative;
+    overflow: hidden;
+    z-index: 1;
+    border: 2px solid var(--hover-color);
+}
+
+#resume-link a.btn::before {
+    content: "";
+    position: absolute;
+    top: 0;
+    left: 0;
+    background: var(--bg-color);
+    width: 0%;
+    height: 100%;
+    z-index: -1;
+    transition: .4s;
+}
+
+#resume-link a.btn:hover {
+    background-color: var(--bg-color);
+    color: var(--hover-color);
+}
+
+#resume-link a.btn:hover::before {
+    width: 100%;
 }
 
 #section-1-img-container {
@@ -101,13 +208,15 @@ header {
 }
 
 #section-1-img-container img {
-    width: 100%;
-    padding-top: 20px;
+    width: 85%;
+    padding-top: 30px;
 }
 
 /* section-2*/
+
 .section-2 {
-    margin-top: 350px;
+    padding-top: 300px;
+    padding-bottom: 300px;
 }
 
 .about-me {
@@ -262,7 +371,8 @@ header {
 /* section 3 */
 
 .section-3 {
-    margin-top: 350px;
+    padding-top: 300px;
+    padding-bottom: 300px;
     display: grid;
     grid-template-columns: 1fr 1.2fr;
     column-gap: 10px;
@@ -346,7 +456,8 @@ svg.radial-progress text {
 /* section 4 */
 
 .section-4 {
-    margin-top: 350px;
+    padding-top: 300px;
+    padding-bottom: 300px;
 }
 
 .section-4 #slideshow-container {
@@ -471,7 +582,7 @@ svg.radial-progress text {
 }
 
 .section-5 {
-    margin-top: 300px;
+    padding-top: 300px;
 }
 
 .section-5 h1 {
@@ -663,11 +774,6 @@ a#email-me:hover::before {
 }
 
 /* footer */
-
-footer {
-    margin-top: 150px;
-    margin-bottom: 1rem;
-}
 
 footer h6 {
     font-size: 1vw;

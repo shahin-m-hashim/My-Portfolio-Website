@@ -19,19 +19,13 @@
 
 @media only screen and (orientation: portrait) {
 
-    /* section 1 */
-    .section-1 {
-        margin-top: 0 !important;
-    }
-
+    /* website tagline */
     .website-tagline-txt {
         font-size: 2.5vw;
-        margin-bottom: 40px;
     }
 
     .introduction {
         grid-template-columns: 1fr;
-        margin-left: 5px;
     }
 
     .introduction #intro-text {
@@ -43,20 +37,17 @@
         font-size: 17vw;
     }
 
-    .introduction #intro-description {
-        font-size: 4.5vw;
-        font-weight: 400;
-        width: auto;
+    .introduction #intro-description h3 {
+        font-size: 3.8vw;
     }
 
     #resume-link {
-        margin-top: 50px;
-        margin-left: 3px;
+        margin-top: 80px;
     }
 
-    #resume-link button {
-        font-size: 3.5vw;
-        padding: 10px 30px;
+    #resume-link a.btn {
+        padding: 20px 25px;
+        font-size: 3vw;
     }
 
     #section-1-img-container {
@@ -65,13 +56,14 @@
     }
 
     #section-1-img-container img {
-        width: 80%;
+        width: 90%;
     }
 
     /* section 2 */
 
     .section-2 {
-        margin-top: 200px;
+        padding-top: 300px;
+        padding-bottom: 400px;
     }
 
     .section-2 .about-me {
@@ -140,8 +132,6 @@
         font-size: 2.5vw;
     }
 
-    /* section 3 */
-
     .section-3 .column-1 #row-1 h1 {
         font-size: 3.5vw;
     }
@@ -198,10 +188,6 @@
 
     /* section 5 */
 
-    .section-5 {
-        margin-top: 250px;
-    }
-
     .section-5 h1 {
         font-size: 7vw;
     }
@@ -239,10 +225,23 @@
 }
 
 @media only screen and (width<=1000px) {
-    /* section 3 */
 
+    .section-4 {
+        padding-bottom: 500px;
+        padding-top: 500px;
+    }
+
+    #resume-link {
+        margin-top: 50px;
+    }
+
+    #resume-link a.btn {
+        padding: 10px 15px;
+        font-size: 4vw;
+    }
+
+    /* section 3 */
     .section-3 {
-        margin-top: 200px !important;
         grid-template-columns: 1fr;
         column-gap: 0;
         row-gap: 30px;
@@ -370,10 +369,6 @@
 }
 
 @media only screen and (width<=500px) {
-
-    .section-4 {
-        margin-top: 200px;
-    }
 
     #resume-link button {
         font-size: 4vw;
