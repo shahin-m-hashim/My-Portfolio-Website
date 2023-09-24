@@ -13,6 +13,7 @@
 
     .navbar-expand-lg .navbar-nav {
         flex-direction: row;
+        column-gap: 15px;
     }
 }
 
@@ -54,8 +55,8 @@
     }
 
     #resume-link button {
-        font-size: 2.3vw;
-        padding: 15px 35px;
+        font-size: 3.5vw;
+        padding: 10px 30px;
     }
 
     #section-1-img-container {
@@ -74,7 +75,7 @@
     }
 
     .section-2 .about-me {
-        padding-bottom: 120px;
+        margin-bottom: 120px;
     }
 
     #sec2-abt-txt {
@@ -195,112 +196,41 @@
         font-size: 4vw;
     }
 
-    /* PROJECT SLIDING */
+    /* section 5 */
 
-    .project-container {
-        max-width: fit-content;
-        position: relative;
-        margin: auto;
+    .section-5 {
+        margin-top: 250px;
     }
 
-    #pr-link {
-        text-decoration: none;
+    .section-5 h1 {
+        font-size: 7vw;
     }
 
-    /* Hide the images by default */
-    .Slide {
-        display: none;
+    .section-5 h3 {
+        font-size: 5vw;
     }
 
-    /* Next & previous buttons */
-    .prev,
-    .next {
-        cursor: pointer;
-        position: absolute;
-        top: 43%;
-        padding: 1vw;
-        color: rgb(255, 255, 255);
-        font-weight: bold;
-        font-size: 1.2vw;
-        background-color: rgb(0, 128, 255);
-        transition: 0.6s ease;
-        user-select: none;
-        text-decoration: none;
+    .section-5 .end-msg h4 {
+        font-size: 6.4vw;
     }
 
-    /* Position the next and previous buttons */
-    .prev {
-        left: 0;
+    .section-5 .end-msg h2 {
+        font-size: 5vw;
     }
 
-    .next {
-        right: 0;
+    a#email-me {
+        font-size: 7vw;
     }
 
-    .prev:hover,
-    .next:hover {
-        background-color: rgba(0, 0, 0, 0.8);
+    a#email-me:before {
+        height: 2px;
     }
 
-    /* Caption text */
-    .pr-title {
-        width: 100%;
-        background-color: rgb(0, 191, 255);
-        text-align: center;
-        color: white;
-        font-size: 2.5vw;
-        font-weight: 500;
-        padding: 5px 0;
+    a#email-me:hover {
+        margin-left: 0;
+        font-size: 9vw;
     }
 
-    .numbertext {
-        color: #ff0000;
-        background-color: rgb(51, 255, 0);
-        background-size: 10px;
-        font-size: 2vw;
-        font-weight: bold;
-        padding: 0.5vw;
-        position: absolute;
-        top: 0;
-        left: 0;
-    }
-
-    /* The dots/bullets/indicators */
-    .dot {
-        cursor: pointer;
-        height: 0.7vw;
-        width: 0.7vw;
-        margin: 0 5px;
-        background-color: rgb(0, 255, 0);
-        border-radius: 50%;
-        display: inline-block;
-        transition: background-color 0.6s ease;
-    }
-
-    .active,
-    .dot:hover {
-        background-color: #0011ff;
-    }
-
-    /* Fading animation */
-    .fade {
-        animation-name: fade;
-        animation-duration: 1.2s;
-    }
-
-    @keyframes fade {
-        from {
-            opacity: 0.5
-        }
-
-        to {
-            opacity: 1
-        }
-    }
-
-    .fade:not(.show) {
-        opacity: 1;
-    }
 }
 
 @media only screen and (width<=1000px) {
@@ -416,12 +346,33 @@
     .section-4 #slideshow-container {
         padding-top: 30px;
     }
+
+    /* section 5 social links */
+
+    .section-5 .social-container {
+        row-gap: 100px;
+        flex-direction: column;
+        align-items: center;
+        justify-content: center;
+    }
+
+    .section-5 .social-container #github-link,
+    .section-5 .social-container #linkedin-link,
+    .section-5 .social-container #instagram-link {
+        width: 80px;
+        height: 80px;
+    }
 }
 
 @media only screen and (width<=500px) {
 
     .section-4 {
         margin-top: 200px;
+    }
+
+    #resume-link button {
+        font-size: 4vw;
+        padding: 5px 20px;
     }
 }
 
