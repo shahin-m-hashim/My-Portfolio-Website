@@ -1,6 +1,4 @@
 * {
-    padding: 0;
-    margin: 0;
     scroll-behavior: smooth;
 }
 
@@ -20,37 +18,30 @@
 }
 
 body {
+    padding: 50px 0;
     font-family: Roboto;
     color: white;
     background-color: var(--bg-color);
 }
 
-section {
+main {
     padding: 5%;
     margin: 0 !important;
 }
 
-.section-1,
-.section-3,
-.section-5 {
-    background-color: var(--bg-color);
-    transition: background-color 0.5s ease-in-out;
-}
-
-.section-2,
-.section-4 {
-    background-color: var(--second-bg-color);
-    transition: background-color 0.5s ease-in-out;
-}
-
-/* header navbar */
-header {
+/* navbar */
+.navbar {
     position: fixed;
     top: 0;
     left: 0;
     right: 0;
     height: fit-content;
     z-index: 5;
+    background-color: #333333 !important;
+}
+
+.navbar-brand {
+    font-size: large;
 }
 
 .navbar-brand,
@@ -58,8 +49,11 @@ header {
     color: white !important;
 }
 
-.navbar-brand {
-    font-size: large;
+.nav-link:hover {
+    font-size: larger;
+    color: var(--hover-color) !important;
+    text-shadow: var(--font-neon-text-shadow);
+    transition: 0.25s ease-in;
 }
 
 .navbar-toggler-icon {
@@ -78,20 +72,31 @@ header {
     box-shadow: none;
 }
 
-/* website tagline */
-.website-tagline-txt {
+/* header */
+
+header {
     text-align: center;
     color: white;
     font-size: 1.7vw;
     font-weight: 400;
-    margin: 30px 0;
+    margin: 20px 0;
+}
+
+.section-1 {
+    padding-bottom: 700px;
+}
+
+.section-2,
+.section-3,
+.section-4 {
+    padding: 300px 0;
+}
+
+.section-5 {
+    padding-top: 300px;
 }
 
 /* section-1 */
-
-.section-1 {
-    padding-bottom: 400px;
-}
 
 .introduction {
     display: grid;
@@ -101,7 +106,7 @@ header {
 
 .introduction #intro-text {
     padding-left: 0.5vw;
-    font-size: 3.5vw;
+    font-size: 4vw;
     font-weight: 500;
     margin-bottom: -3.2vw;
 }
@@ -214,25 +219,18 @@ header {
 
 /* section-2*/
 
-.section-2 {
-    padding-top: 300px;
-    padding-bottom: 300px;
-}
-
 .about-me {
-    margin-bottom: 200px;
     color: #ccff00;
 }
 
 #sec2-abt-txt {
-    font-size: 2.5vw;
+    font-size: 3vw;
     font-weight: 400;
-    padding-left: 5px;
 }
 
 #sec2-greeting-txt {
-    font-size: 7vw;
-    font-weight: 800;
+    font-size: 5vw;
+    font-weight: 600;
 }
 
 .section-2 p {
@@ -243,44 +241,46 @@ header {
 }
 
 /* section 2 character */
+.character-container {
+    margin: 500px 0;
+}
+
 .character-container #heading {
-    font-size: 5vw;
+    font-size: 6vw;
     font-weight: 500;
 }
 
 .character {
     display: grid;
     margin-top: 60px;
-    padding: 0 20px;
-    align-items: start;
-    grid-template-columns: 1.3fr 5fr;
+    grid-template-columns: 1.5fr 4fr;
 }
 
 .character ul {
-    font-size: 2vw;
+    font-size: 2.5vw;
     padding-left: 50px;
 }
 
 .character #description div {
-    font-size: 2.15vw;
+    font-size: 2vw;
 }
 
 .personal-background {
-    margin-top: 200px;
     display: grid;
     column-gap: 50px;
     grid-template-columns: 1fr 1fr;
 }
 
-/* Education */
+/* Languages Known */
 
-.pb-education h1 {
-    font-size: 4.3vw;
+.lang h1 {
+    margin-top: -20px;
+    font-size: 4vw;
 }
 
-.pb-education div {
-    padding-left: 2px;
-    font-size: 1.7vw;
+.lang div {
+    font-size: 2.3vw;
+    font-weight: 300;
 }
 
 /* Interests */
@@ -304,7 +304,6 @@ header {
     display: grid;
     grid-template-columns: 1fr 1fr;
     column-gap: 20px;
-    padding-left: 5px;
 }
 
 .pb-scroll-out #interest {
@@ -356,50 +355,37 @@ header {
     background: #d327f1;
 }
 
-
-/* Languages Known */
-
-.lang h1 {
-    font-size: 2.3vw;
-}
-
-.lang div {
-    font-size: 2.2vw;
-    font-weight: 300;
-}
-
-/* section 3 */
+/* Section 3 */
 
 .section-3 {
-    padding-top: 300px;
-    padding-bottom: 300px;
     display: grid;
     grid-template-columns: 1fr 1.2fr;
     column-gap: 10px;
 }
 
 .section-3 .column-1 #row-1 h1 {
-    font-size: 3vw;
+    font-size: 4vw;
 }
 
 .section-3 .column-1 #row-1 h2 {
-    font-size: 1.6vw;
+    font-size: 2vw;
 }
 
-.section-3 .column-1 #row-1 h3 {
-    font-size: 1.3vw;
-}
-
+.section-3 .column-1 #row-1 h3,
 .section-3 .column-1 #row-1 h4 {
-    font-size: 1.2vw;
+    font-size: 1.5vw;
 }
 
 .section-3 .column-1 #row-1 ul {
-    font-size: 1.3vw;
+    font-size: 1.4vw;
+}
+
+.section-3 .column-1 #row-2 {
+    margin-top: 50px;
 }
 
 .section-3 .column-1 #row-2 h1 {
-    font-size: 2.7vw;
+    font-size: 3vw;
 }
 
 .section-3 .column-1 #row-2 ol {
@@ -407,7 +393,7 @@ header {
 }
 
 .section-3 .column-2 h1 {
-    font-size: 2.8vw;
+    font-size: 4vw;
 }
 
 /* sec3 skills progress bar */
@@ -453,21 +439,21 @@ svg.radial-progress text {
     text-shadow: 0 0 5px #0000007a;
 }
 
-/* section 4 */
+/* Section 4 */
 
-.section-4 {
-    padding-top: 300px;
-    padding-bottom: 300px;
+.section-4 h1 {
+    font-size: 4.5vw;
+}
+
+.section-4 h3 {
+    font-size: 3.5vw;
 }
 
 .section-4 #slideshow-container {
-    padding-top: 50px;
+    padding-top: 100px;
 }
 
-/* PROJECT SLIDING */
-
 .project-container {
-    max-width: fit-content;
     position: relative;
     margin: auto;
 }
@@ -572,17 +558,14 @@ svg.radial-progress text {
 }
 
 
-/* section 5 */
+/* Section 5 */
+
 :root {
     --grey: #D3D3D3;
     --facebook: #3b5999;
     --twitter: #55acee;
     --github: #2b3137;
     --linkedin: #0077B5;
-}
-
-.section-5 {
-    padding-top: 300px;
 }
 
 .section-5 h1 {
@@ -595,7 +578,7 @@ svg.radial-progress text {
 
 .section-5 .social-container {
     display: flex;
-    padding: 50px 0;
+    padding: 200px 0;
     align-items: center;
     justify-content: space-around;
 }
@@ -609,8 +592,8 @@ svg.radial-progress text {
     transform: perspective(1000px) rotate(-30deg) skew(25deg) translate(0, 0);
     transition: .5s;
     box-shadow: -30px 30px 10px rgba(0, 0, 0, .5);
-    width: 100px;
-    height: 100px;
+    width: 150px;
+    height: 150px;
 }
 
 .section-5 .social-container #github-link svg,
@@ -722,10 +705,6 @@ svg.radial-progress text {
 }
 
 /* section-5 end msg */
-
-.section-5 .end-msg {
-    margin-top: 200px;
-}
 
 .section-5 .end-msg h4 {
     font-size: 4vw;

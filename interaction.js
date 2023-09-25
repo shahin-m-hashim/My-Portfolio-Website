@@ -1,9 +1,9 @@
-window.onload =function()
-{
- console.log(`The Page Has Loaded Successfully${"\n"}Welcome To My Portfolio`);
-}
+    window.onload =function()
+    {
+    console.log(`The Page Has Loaded Successfully${"\n"}Welcome To My Portfolio`);
+    }
 
-//  website-tagline-txt
+    //header
     var typed1 = new Typed('#slog-txt1', {
         strings: ['Websites, Images And Videos'],
         typeSpeed: 100,
@@ -19,55 +19,53 @@ window.onload =function()
         loop: true
     });
 
-// section 1 intro description
-
-
-let words = document.querySelectorAll(".word");
-words.forEach((word)=>{
-    let letters = word.textContent.split(""); word.textContent="";
-    letters.forEach((letter)=>{
-        let span = document.createElement("span");
-        span.textContent = letter;
-        span.className = "letter";
-        word.append(span);
-    });
-});
-
-let currentWordIndex = 0;
-let maxWordIndex = words.length -1;
-words[currentWordIndex].style.opacity = "1";
-
-let changeText = () => {
-    let currentWord = words[currentWordIndex];
-    let nextWord = currentWordIndex === maxWordIndex ? words[0] : words[currentWordIndex + 1];
-
-    Array.from(currentWord.children).forEach((letter, i) => {
-        setTimeout(() => {
-            letter.className = "letter out";
-        },i * 80);
+    // section 1 intro description
+    let words = document.querySelectorAll(".word");
+    words.forEach((word)=>{
+        let letters = word.textContent.split(""); word.textContent="";
+        letters.forEach((letter)=>{
+            let span = document.createElement("span");
+            span.textContent = letter;
+            span.className = "letter";
+            word.append(span);
+        });
     });
 
-    nextWord.style.opacity = "1";
-    Array.from(nextWord.children).forEach((letter, i) => {
-        letter.className = "letter behind";
-        setTimeout(() => {
-            letter.className = "letter in";
-        },340 + i * 80);
-    });
-    currentWordIndex = currentWordIndex === maxWordIndex ? 0 : currentWordIndex + 1;
-};
+    let currentWordIndex = 0;
+    let maxWordIndex = words.length -1;
+    words[currentWordIndex].style.opacity = "1";
 
-changeText();
-setInterval(changeText,5000);
+    let changeText = () => {
+        let currentWord = words[currentWordIndex];
+        let nextWord = currentWordIndex === maxWordIndex ? words[0] : words[currentWordIndex + 1];
+
+        Array.from(currentWord.children).forEach((letter, i) => {
+            setTimeout(() => {
+                letter.className = "letter out";
+            },i * 80);
+        });
+
+        nextWord.style.opacity = "1";
+        Array.from(nextWord.children).forEach((letter, i) => {
+            letter.className = "letter behind";
+            setTimeout(() => {
+                letter.className = "letter in";
+            },340 + i * 80);
+        });
+        currentWordIndex = currentWordIndex === maxWordIndex ? 0 : currentWordIndex + 1;
+    };
+
+    changeText();
+    setInterval(changeText,5000);
 
 
-//section 2 about 
+    //section 2 about 
     ScrollReveal().reveal('.scroll-reveal', {
-        delay:100,
+        delay:10,
         reset:true,
-        duration: 550,
+        duration: 500,
         origin: 'top',
-        easing: 'ease',
+        easing: 'ease-in-out',
         distance:'150px',
             rotate: {
             x: 180,
@@ -76,7 +74,7 @@ setInterval(changeText,5000);
         }
     });
 
-//section 2 character
+    //section 2 character
     ScrollReveal().reveal('.scroll-reveal-character-heading', {
         delay:100,
         reset:true,
@@ -86,12 +84,14 @@ setInterval(changeText,5000);
         distance:'150px',
     });
 
+
+    //section 2 interests
     ScrollOut({
     targets:'.pb-scroll-out h1,.pb-scroll-out h2,.pb-scroll-out h3'
     });
 
 
-// section 3 skills progress bar animation on scroll
+    //section 3 skills progress bar animation on scroll
     function radial_animate() { 
     $('svg.radial-progress').each(function( index, value ) { 
 
@@ -156,7 +156,7 @@ setInterval(changeText,5000);
     $window.on('scroll', check_if_in_view);
 
 
-//Project Slideshow Container in Section 3
+    //Project Slideshow Container in Section 3
 
     let slideIndex = 1;
     showSlides(slideIndex);

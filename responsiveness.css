@@ -1,7 +1,7 @@
 /* Customize the behavior for navbar */
 @media only screen and (orientation: landscape) {
 
-    /* header navbar */
+    /* navbar */
     .navbar-expand-lg .navbar-toggler {
         display: none !important;
     }
@@ -19,10 +19,11 @@
 
 @media only screen and (orientation: portrait) {
 
-    /* website tagline */
-    .website-tagline-txt {
+    header {
         font-size: 2.5vw;
     }
+
+    /* Section 1 */
 
     .introduction {
         grid-template-columns: 1fr;
@@ -59,16 +60,7 @@
         width: 90%;
     }
 
-    /* section 2 */
-
-    .section-2 {
-        padding-top: 300px;
-        padding-bottom: 400px;
-    }
-
-    .section-2 .about-me {
-        margin-bottom: 120px;
-    }
+    /* section-2*/
 
     #sec2-abt-txt {
         font-size: 3.5vw;
@@ -77,11 +69,10 @@
     #sec2-greeting-txt {
         font-size: 6vw;
         font-weight: 800;
-        padding-left: 5px;
     }
 
     .section-2 p {
-        font-size: 2.5vw;
+        font-size: 3vw;
         padding-left: 5px;
     }
 
@@ -96,7 +87,7 @@
     }
 
     .character {
-        margin-top: 30px;
+        margin-top: 20px;
         grid-template-columns: 1fr;
     }
 
@@ -105,78 +96,27 @@
     }
 
     .character ul {
-        font-size: 3.7vw;
-        padding-left: 10px
+        font-size: 4vw;
+        padding-left: 50px;
     }
 
     .character #description h1 {
-        font-size: 5.3vw !important;
+        font-size: 5vw !important;
     }
 
     .character #description div {
-        font-size: 4vw;
-    }
-
-    /* section 2 personal background */
-
-    .pb-education div {
-        padding-left: 0;
-        font-size: 2.3vw;
+        font-size: 3.6vw;
     }
 
     .lang h1 {
-        font-size: 3vw;
+        font-size: 6vw;
     }
 
     .lang div {
-        font-size: 2.5vw;
+        font-size: 4vw;
     }
 
-    .section-3 .column-1 #row-1 h1 {
-        font-size: 3.5vw;
-    }
-
-    .section-3 .column-1 #row-1 h2 {
-        font-size: 2.3vw;
-    }
-
-    .section-3 .column-1 #row-1 h3 {
-        font-size: 1.7vw;
-    }
-
-    .section-3 .column-1 #row-1 h4 {
-        font-size: 1.5vw;
-    }
-
-    .section-3 .column-1 #row-1 ul {
-        font-size: 1.7vw;
-    }
-
-    .section-3 .column-1 #row-2 h1 {
-        font-size: 3.5vw;
-    }
-
-    .section-3 .column-1 #row-2 ol {
-        font-size: 1.5vw;
-    }
-
-    .section-3 .column-2 h1 {
-        font-size: 3.5vw;
-    }
-
-
-    /* sec3 skills progress bar */
-
-    .skills-container {
-        grid-template-columns: 1fr 1fr 1fr;
-    }
-
-
-    svg.radial-progress {
-        width: 50%;
-    }
-
-    /* section 4 */
+    /* Section 4 */
 
     .section-4 h1 {
         font-size: 6vw;
@@ -186,7 +126,7 @@
         font-size: 4vw;
     }
 
-    /* section 5 */
+    /* Section 5 */
 
     .section-5 h1 {
         font-size: 7vw;
@@ -224,55 +164,56 @@
 
 }
 
-@media only screen and (width<=1000px) {
-
-    .section-4 {
+@media only screen and (width<=1500px) {
+    .section-1 {
         padding-bottom: 500px;
-        padding-top: 500px;
     }
 
-    #resume-link {
-        margin-top: 50px;
+    /* Section-2 */
+    .character-container {
+        margin: 200px 0;
     }
 
-    #resume-link a.btn {
-        padding: 10px 15px;
-        font-size: 4vw;
+    .personal-background {
+        display: grid;
+        row-gap: 80px;
+        column-gap: 0;
+        grid-template-columns: 1fr;
     }
 
     /* section 3 */
     .section-3 {
         grid-template-columns: 1fr;
         column-gap: 0;
-        row-gap: 30px;
-    }
-
-    #sec3-br-toggle-off {
-        display: none !important;
+        row-gap: 100px;
     }
 
     .section-3 .column-1 #row-1 h1 {
-        font-size: 5vw;
+        font-size: 6vw;
     }
 
     .section-3 .column-1 #row-1 h2 {
-        font-size: 3.4vw;
+        font-size: 4vw;
     }
 
     .section-3 .column-1 #row-1 h3 {
-        font-size: 2.6vw;
+        font-size: 3vw;
     }
 
     .section-3 .column-1 #row-1 h4 {
-        font-size: 2.4vw;
+        font-size: 2.5vw;
     }
 
     .section-3 .column-1 #row-1 ul {
-        font-size: 3.3vw;
+        font-size: 3.5vw;
+    }
+
+    .section-3 .column-1 #row-2 {
+        margin-top: 100px;
     }
 
     .section-3 .column-1 #row-2 h1 {
-        font-size: 3.5vw;
+        font-size: 6vw;
     }
 
     .section-3 .column-1 #row-2 ol {
@@ -280,7 +221,7 @@
     }
 
     .section-3 .column-2 h1 {
-        font-size: 5vw;
+        font-size: 7vw;
     }
 
 
@@ -298,34 +239,45 @@
         width: 50%;
     }
 
+    /* Section 5 */
+    .section-5 .social-container {
+        padding: 150px 0;
+    }
+
+    .section-5 .social-container #github-link,
+    .section-5 .social-container #linkedin-link,
+    .section-5 .social-container #instagram-link {
+        width: 115px;
+        height: 115px;
+    }
+}
+
+
+@media only screen and (width<=1000px) {
+
+    header {
+        font-size: 3.2vw;
+    }
+
+    #resume-link {
+        margin-top: 50px;
+    }
+
+    #resume-link a.btn {
+        padding: 10px 15px;
+        font-size: 4vw;
+    }
+
 }
 
 @media only screen and (width<=800px) {
 
+    /* Section 1 */
+    .section-1 {
+        padding-bottom: 300px;
+    }
+
     /* section 2 personal background */
-    .personal-background {
-        margin-top: 60px;
-        column-gap: 0;
-        grid-template-columns: 1fr;
-    }
-
-    .personal-background .pb-education {
-        margin-top: 0 !important;
-    }
-
-    .personal-background .div-2 {
-        padding-left: 20px;
-        margin-top: 50px;
-    }
-
-    .pb-education h1 {
-        font-size: 7vw;
-    }
-
-    .pb-education div {
-        padding-left: 0;
-        font-size: 3.5vw;
-    }
 
     .pb-scroll-out h1 {
         font-size: 5vw;
@@ -354,17 +306,11 @@
     /* section 5 social links */
 
     .section-5 .social-container {
-        row-gap: 100px;
+        padding: 100px 0;
+        row-gap: 150px;
         flex-direction: column;
         align-items: center;
         justify-content: center;
-    }
-
-    .section-5 .social-container #github-link,
-    .section-5 .social-container #linkedin-link,
-    .section-5 .social-container #instagram-link {
-        width: 80px;
-        height: 80px;
     }
 }
 
@@ -385,7 +331,7 @@
 
 @media only screen and (width<=300px) {
 
-    /* header navbar */
+    /* navbar */
     .navbar-brand {
         font-size: medium;
     }
