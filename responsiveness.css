@@ -1,5 +1,5 @@
 /* Customize the behavior for navbar */
-@media only screen and (orientation: landscape) {
+@media only screen and (width >=1000px) {
 
     /* navbar */
     .navbar-expand-lg .navbar-toggler {
@@ -272,6 +272,10 @@
 
 @media only screen and (width<=800px) {
 
+    main {
+        padding-top: 4%;
+    }
+
     /* Section 1 */
     .section-1 {
         padding-bottom: 300px;
@@ -330,6 +334,10 @@
 
 
 @media only screen and (width<=300px) {
+
+    main {
+        padding-top: 5%;
+    }
 
     /* navbar */
     .navbar-brand {

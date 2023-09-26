@@ -22,10 +22,12 @@ body {
     font-family: Roboto;
     color: white;
     background-color: var(--bg-color);
+    transition: background-color 0.5s ease 0s;
 }
 
 main {
     padding: 5%;
+    padding-top: 2%;
     margin: 0 !important;
 }
 
@@ -53,7 +55,7 @@ main {
     font-size: larger;
     color: var(--hover-color) !important;
     text-shadow: var(--font-neon-text-shadow);
-    transition: 0.25s ease-in;
+    transition: 0.1s ease-in;
 }
 
 .navbar-toggler-icon {
@@ -79,7 +81,7 @@ header {
     color: white;
     font-size: 1.7vw;
     font-weight: 400;
-    margin: 20px 0;
+    margin-bottom: 50px;
 }
 
 .section-1 {

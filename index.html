@@ -29,8 +29,8 @@
 
 <body>
     <nav class="navbar navbar-expand-lg bg-body-tertiary">
-        <div class="container-fluid">
-            <a class="navbar-brand" href="#">SHAHIN M HASHIM</a>
+        <div class="container-fluid" style="padding: 0 5%;">
+            <a class="navbar-brand" id="nav-link" href="#main-content">SHAHIN M HASHIM</a>
             <button class="navbar-toggler" type="button" data-bs-toggle="collapse"
                 data-bs-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false"
                 aria-label="Toggle navigation">
@@ -44,30 +44,33 @@
             <div class="collapse navbar-collapse" id="navbarSupportedContent">
                 <ul class="navbar-nav" style="margin-left: auto;">
                     <li class="nav-item">
-                        <a class="nav-link" href="#">Home</a>
+                        <a class="nav-link" id="nav-link" href="#main-content">Home</a>
                     </li>
                     <li class="nav-item">
-                        <a class="nav-link" href="#">About</a>
+                        <a class="nav-link" id="nav-link" href="#section-2">About</a>
                     </li>
                     <li class="nav-item">
-                        <a class="nav-link" href="#">Projects</a>
+                        <a class="nav-link" id="nav-link" href="#section-3">Expertise</a>
                     </li>
                     <li class="nav-item">
-                        <a class="nav-link" href="#">Contact</a>
+                        <a class="nav-link" id="nav-link" href="#section-4">Projects</a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link" id="nav-link" href="#section-5">Contact</a>
                     </li>
                 </ul>
             </div>
         </div>
     </nav>
 
-    <header>
-        <span id="slog-txt1"></span>
-        <br>
-        <span id="slog-txt2"></span>
-    </header>
+    <main id="main-content">
+        <header id="header">
+            <span id="slog-txt1"></span>
+            <br>
+            <span id="slog-txt2"></span>
+        </header>
 
-    <main>
-        <section class="section-1">
+        <section class="section-1 colored-box" id="section-1" data-color="#270622">
             <div class="introduction">
                 <div>
                     <div id="intro-text">Hey I'm</div>
@@ -92,7 +95,7 @@
             </div>
         </section>
 
-        <section class="section-2">
+        <section class="section-2 colored-box" id="section-2" data-color="#292e33">
             <div class="about-me">
                 <div id="sec2-abt-txt" class="scroll-reveal">About.</div>
                 <div id="sec2-greeting-txt" class="scroll-reveal">Hello There!</div>
@@ -180,7 +183,7 @@
             </div>
         </section>
 
-        <section class="section-3">
+        <section class="section-3 colored-box" id="section-3" data-color="#270622">
             <div class="column-1">
                 <div id="row-1">
                     <h1>Work Experience</h1>
@@ -325,7 +328,7 @@
             </div>
         </section>
 
-        <section class="section-4">
+        <section class="section-4 colored-box" id="section-4" data-color="#292e33">
             <h1>MY PROJECTS</h1>
             <h3>A Collection Of My Latest Works</h3>
             <div id="slideshow-container">
@@ -389,7 +392,7 @@
             </div>
         </section>
 
-        <section class="section-5">
+        <section class="section-5 colored-box" id="section-5" data-color="#270622">
             <h1>Lets Connect</h1>
             <br>
             <h3>Social</h3>
@@ -437,7 +440,8 @@
         </script>
 
     <!-- JQuery -->
-    <script src="https://code.jquery.com/jquery-3.5.0.min.js"></script>
+    <script src="https://code.jquery.com/jquery-3.6.0.min.js"></script>
+
 
     <!-- Custom Scripts -->
     <script src="interaction.js"></script>
