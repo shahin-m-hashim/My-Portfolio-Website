@@ -10,7 +10,7 @@ let cursorX = 0;
 let cursorY = 0;
 
 // Smoothly update cursor position
-const smoothness = 0.10;
+const smoothness = 0.1;
 
 window.addEventListener('mousemove', updateCursor);
 
@@ -57,7 +57,6 @@ $(document).ready(function () {
     });
 });
 
-
 //body background color transition
 const coloredBoxes = document.querySelectorAll('.colored-box');
 
@@ -71,14 +70,12 @@ window.addEventListener('scroll', () => {
     });
 });
 
-
 //navbar dropdown collapse
 $(document).ready(function () {
     $("a.nav-link").click(function () {
         $(".navbar-collapse").collapse("hide");
     });
 });
-
 
 //header
 var typed1 = new Typed('#slog-txt1', {
@@ -135,9 +132,11 @@ let changeText = () => {
 changeText();
 setInterval(changeText, 5000);
 
+//Scroll Or Refresh Reveal Items 
+const sr = ScrollReveal();
 
 //section 2 about 
-ScrollReveal().reveal('.scroll-reveal', {
+sr.reveal('.scroll-reveal', {
     delay: 50,
     reset: true,
     duration: 300,
@@ -147,7 +146,7 @@ ScrollReveal().reveal('.scroll-reveal', {
 });
 
 //section 2 character
-ScrollReveal().reveal('.scroll-reveal-character-heading', {
+sr.reveal('.scroll-reveal-character-heading', {
     delay: 100,
     reset: true,
     duration: 400,
@@ -156,6 +155,91 @@ ScrollReveal().reveal('.scroll-reveal-character-heading', {
     distance: '150px',
 });
 
+
+sr.reveal('#section-1', {
+    delay: 10,
+    reset: false,
+    duration: 700,
+    origin: 'bottom',
+    easing: 'ease-in',
+    distance: '100px',
+});
+
+// Scroll Reveal Section 1 
+
+sr.reveal('#intro-text', {
+    delay: 100,
+    reset: false,
+    duration: 500,
+    origin: 'bottom',
+    easing: 'ease-in',
+    distance: '100px',
+});
+
+sr.reveal('#intro-name', {
+    delay: 200,
+    reset: false,
+    duration: 500,
+    origin: 'bottom',
+    easing: 'ease-in',
+    distance: '100px',
+});
+
+sr.reveal('#intro-description', {
+    delay: 300,
+    reset: false,
+    duration: 500,
+    origin: 'bottom',
+    easing: 'ease-in',
+    distance: '100px',
+});
+
+sr.reveal('#resume-link', {
+    delay: 400,
+    reset: false,
+    duration: 500,
+    origin: 'bottom',
+    easing: 'ease-in',
+    distance: '100px',
+});
+
+sr.reveal('#section-1-img-container', {
+    delay: 100,
+    reset: false,
+    duration: 500,
+    origin: 'bottom',
+    easing: 'ease-in',
+    distance: '100px',
+});
+
+// Scroll Reveal Section 2 Paragraphs 
+
+sr.reveal('#sec2-abt-me-p1', {
+    delay: 100,
+    reset: false,
+    duration: 300,
+    origin: 'bottom',
+    easing: 'ease-in',
+    distance: '100px',
+});
+
+sr.reveal('#sec2-abt-me-p2', {
+    delay: 200,
+    reset: false,
+    duration: 300,
+    origin: 'bottom',
+    easing: 'ease-in',
+    distance: '100px',
+});
+
+sr.reveal('#sec2-abt-me-p3', {
+    delay: 300,
+    reset: false,
+    duration: 300,
+    origin: 'bottom',
+    easing: 'ease-in',
+    distance: '100px',
+});
 
 //section 2 interests
 ScrollOut({
