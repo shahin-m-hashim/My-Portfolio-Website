@@ -2,6 +2,36 @@ window.onload = function () {
     console.log(`The Page Has Loaded Successfully${"\n"}Welcome To My Portfolio`);
 }
 
+//custom mouse cursor
+let mouseCursor = document.querySelector(".bubble-cursor");
+
+// Initialize cursor position
+let cursorX = 0;
+let cursorY = 0;
+
+// Smoothly update cursor position
+const smoothness = 0.10;
+
+window.addEventListener('mousemove', updateCursor);
+
+function updateCursor(e) {
+    // Calculate the difference between the current and new position
+    const dx = e.clientX - cursorX;
+    const dy = e.clientY - cursorY;
+
+    // Apply easing to the cursor's movement
+    cursorX += dx * smoothness;
+    cursorY += dy * smoothness;
+
+    // Calculate the centered position
+    const centerX = cursorX - mouseCursor.clientWidth / 2;
+    const centerY = cursorY - mouseCursor.clientHeight / 2;
+
+    // Update the cursor's position
+    mouseCursor.style.left = `${centerX}px`;
+    mouseCursor.style.top = `${centerY}px`;
+}
+
 //page navigation + smooth animation using jquery
 $(document).ready(function () {
     $("a#nav-link").click(function (event) {

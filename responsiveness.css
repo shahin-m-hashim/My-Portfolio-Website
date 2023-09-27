@@ -13,7 +13,7 @@
 
     .navbar-expand-lg .navbar-nav {
         flex-direction: row;
-        column-gap: 15px;
+        column-gap: 30px;
     }
 }
 
