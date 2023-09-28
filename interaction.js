@@ -39,7 +39,7 @@ const navLinks = document.querySelectorAll('a,#resume-link,#sec4-prev-btn,#sec4-
 navLinks.forEach((navLink) => {
     navLink.addEventListener('mouseenter', () => {
         mouseCursor.style.backdropFilter = 'blur(0.5px)';
-        mouseCursor.style.transform = 'scale(1.35)';
+        mouseCursor.style.transform = 'scale(1.3)';
     });
 
     navLink.addEventListener('mouseleave', () => {
