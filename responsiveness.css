@@ -46,7 +46,7 @@
         margin-top: 80px;
     }
 
-    #resume-link a.btn {
+    .resume-link-btn {
         padding: 20px 25px;
         font-size: 3vw;
     }
@@ -175,13 +175,20 @@
 }
 
 @media only screen and (width<=1500px) {
-    .section-1 {
-        padding-bottom: 500px;
+
+    .section-2,
+    .section-3,
+    .section-4 {
+        padding: 17vw 0;
+    }
+
+    .section-5 {
+        padding-top: 17vw;
     }
 
     /* Section-2 */
     .character-container {
-        margin: 200px 0;
+        margin: 13vw 0;
     }
 
     .personal-background {
@@ -219,7 +226,7 @@
     }
 
     .section-3 .column-1 #row-2 {
-        margin-top: 100px;
+        margin-top: 3vw;
     }
 
     .section-3 .column-1 #row-2 h1 {
@@ -262,6 +269,18 @@
     }
 }
 
+@media only screen and (width<=1200px) {
+
+    .section-2,
+    .section-3,
+    .section-4 {
+        padding: 20vw 0;
+    }
+
+    .section-5 {
+        padding-top: 20vw;
+    }
+}
 
 @media only screen and (width<=1000px) {
 
@@ -273,7 +292,7 @@
         margin-top: 50px;
     }
 
-    #resume-link a.btn {
+    .resume-link-btn {
         padding: 10px 15px;
         font-size: 4vw;
     }
@@ -281,6 +300,16 @@
 }
 
 @media only screen and (width<=800px) {
+
+    .section-2,
+    .section-3,
+    .section-4 {
+        padding: 35vw 0;
+    }
+
+    .section-5 {
+        padding-top: 35vw;
+    }
 
     main {
         padding-top: 4%;
@@ -293,11 +322,6 @@
 
     .navbar-toggler-icon {
         padding: 3px;
-    }
-
-    /* Section 1 */
-    .section-1 {
-        padding-bottom: 300px;
     }
 
     /* section 2 personal background */
@@ -339,6 +363,20 @@
 
 @media only screen and (width<=500px) {
 
+    .section-1 {
+        padding-bottom: 0;
+    }
+
+    .section-2,
+    .section-3,
+    .section-4 {
+        padding: 60vw 0;
+    }
+
+    .section-5 {
+        padding-top: 60vw;
+    }
+
     #resume-link button {
         font-size: 4vw;
         padding: 5px 20px;
@@ -353,6 +391,16 @@
 
 
 @media only screen and (width<=300px) {
+
+    .section-2,
+    .section-3,
+    .section-4 {
+        padding: 70vw 0;
+    }
+
+    .section-5 {
+        padding-top: 70vw;
+    }
 
     main {
         padding-top: 5%;

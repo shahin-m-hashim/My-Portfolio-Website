@@ -2,9 +2,9 @@ window.onload = function () {
     console.log(`The Page Loaded Successfully${"\n"}Welcome To My Portfolio`);
 }
 
-document.addEventListener('contextmenu', function (event) {
-    event.preventDefault(); // Prevent the default context menu from appearing
-});
+// document.addEventListener('contextmenu', function (event) {
+//     event.preventDefault(); // Prevent the default context menu from appearing
+// });
 
 //custom mouse cursor
 let mouseCursor = document.querySelector(".bubble-cursor");
@@ -38,7 +38,7 @@ function updateCursor(e) {
 
 // Mouse Cursor Hover Animation
 
-const navLinks = document.querySelectorAll('.navbar-brand,.nav-item,#sec4-prev-btn,#sec4-nxt-btn,#resume-link ,#github-link,#linkedin-link,#instagram-link,#email-me');
+const navLinks = document.querySelectorAll('.navbar-brand,.nav-item,#sec4-prev-btn,#sec4-nxt-btn,.resume-link-btn,#github-link,#linkedin-link,#instagram-link,#email-me');
 
 navLinks.forEach((navLink) => {
     navLink.addEventListener('mouseenter', () => {
@@ -77,13 +77,13 @@ $(document).ready(function () {
 
         // Define offset and padding values for specific sections
         const sectionOffsets = {
-            '#section-2': { offset: 100, padding: 300 },
-            '#section-3': { offset: 100, padding: 300 },
-            '#section-4': { offset: 100, padding: 300 },
-            '#section-5': { offset: 100, padding: 300 }
+            '#section-2': { offset: 60, padding: 200 },
+            '#section-3': { offset: 60, padding: 200 },
+            '#section-4': { offset: 60, padding: 200 },
+            '#section-5': { offset: 60, padding: 200 }
         };
 
-        const { offset, padding } = sectionOffsets[targetId] || { offset: 60, padding: 10 };
+        const { offset, padding } = sectionOffsets[targetId] || { offset: 70, padding: 20 };
 
         const targetOffset = targetElement.offset().top - offset + padding;
 
@@ -166,7 +166,7 @@ let changeText = () => {
 };
 
 changeText();
-setInterval(changeText, 5000);
+setInterval(changeText, 3500);
 
 //Scroll Or Refresh Reveal Items 
 const sr = ScrollReveal();
