@@ -276,6 +276,15 @@
         padding-top: 4%;
     }
 
+    /* navbar */
+    .navbar-brand {
+        font-size: small;
+    }
+
+    .navbar-toggler-icon {
+        padding: 3px;
+    }
+
     /* Section 1 */
     .section-1 {
         padding-bottom: 300px;
@@ -341,10 +350,11 @@
 
     /* navbar */
     .navbar-brand {
-        font-size: medium;
+        font-size: x-small;
     }
 
     .navbar-toggler-icon {
-        padding: 4px;
+        padding: 8px;
+        margin-top: -12px;
     }
 }
