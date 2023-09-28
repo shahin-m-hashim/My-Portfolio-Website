@@ -34,7 +34,7 @@ function updateCursor(e) {
 
 // Mouse Cursor Hover Animation
 
-const navLinks = document.querySelectorAll('a,#resume-link,#sec4-prev-btn,#sec4-nxt-btn');
+const navLinks = document.querySelectorAll('.navbar-brand,.nav-item,#resume-link .btn,#sec4-prev-btn,#sec4-nxt-btn');
 
 navLinks.forEach((navLink) => {
     navLink.addEventListener('mouseenter', () => {
@@ -45,6 +45,27 @@ navLinks.forEach((navLink) => {
     navLink.addEventListener('mouseleave', () => {
         mouseCursor.style.backdropFilter = 'blur(10px)';
         mouseCursor.style.transform = 'scale(1)';
+    });
+});
+
+
+// Project Link Mouse Cursor Animation on Hover
+
+// Select all links with IDs starting with "pr-link"
+const projectLinks = document.querySelectorAll('[id^="pr-link"]');
+const cursorContent = document.querySelector('.cursor-content');
+
+projectLinks.forEach((prLink) => {
+    prLink.addEventListener('mouseenter', () => {
+        cursorContent.style.width = '5rem';
+        cursorContent.style.height = '5rem';
+        cursorContent.style.opacity = '1';
+    });
+
+    prLink.addEventListener('mouseleave', () => {
+        cursorContent.style.width = '5rem';
+        cursorContent.style.height = '5rem';
+        cursorContent.style.opacity = '0';
     });
 });
 

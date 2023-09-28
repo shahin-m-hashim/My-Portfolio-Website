@@ -58,6 +58,24 @@ body {
     box-shadow: 1px -10px 15px #c3c5c7;
 }
 
+/* Project Link Mouse Cursor Animation on Hover */
+.cursor-content {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    position: absolute;
+    top: -20px;
+    left: -25px;
+    width: 3rem;
+    height: 3rem;
+    border-radius: 50%;
+    font-weight: bolder;
+    color: var(--hover-color);
+    background-color: var(--bg-color);
+    opacity: 0;
+    transition: all 0.2s ease-in-out;
+}
+
 main {
     padding: 5%;
     padding-top: 2%;
@@ -493,7 +511,11 @@ svg.radial-progress text {
     margin: auto;
 }
 
-#pr-link {
+#pr-link1,
+#pr-link2,
+#pr-link3,
+#pr-link4,
+#pr-link5 {
     text-decoration: none;
 }
 
@@ -525,11 +547,6 @@ svg.radial-progress text {
 
 .next {
     right: 0;
-}
-
-.prev:hover,
-.next:hover {
-    background-color: rgba(0, 0, 0, 0.8);
 }
 
 /* Caption text */
@@ -591,7 +608,6 @@ svg.radial-progress text {
 .fade:not(.show) {
     opacity: 1;
 }
-
 
 /* Section 5 */
 
