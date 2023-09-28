@@ -10,7 +10,7 @@ let cursorX = 0;
 let cursorY = 0;
 
 // Smoothly update cursor position
-const smoothness = 0.09;
+const smoothness = 0.15;
 
 window.addEventListener('mousemove', updateCursor);
 
@@ -34,7 +34,7 @@ function updateCursor(e) {
 
 // Mouse Cursor Hover Animation
 
-const navLinks = document.querySelectorAll('.navbar-brand,.nav-item,#resume-link .btn,#sec4-prev-btn,#sec4-nxt-btn');
+const navLinks = document.querySelectorAll('.navbar-brand,.nav-item,#sec4-prev-btn,#sec4-nxt-btn,#resume-link ,#github-link,#linkedin-link,#instagram-link,#email-me');
 
 navLinks.forEach((navLink) => {
     navLink.addEventListener('mouseenter', () => {
@@ -48,7 +48,6 @@ navLinks.forEach((navLink) => {
     });
 });
 
-
 // Project Link Mouse Cursor Animation on Hover
 
 // Select all links with IDs starting with "pr-link"
@@ -57,14 +56,10 @@ const cursorContent = document.querySelector('.cursor-content');
 
 projectLinks.forEach((prLink) => {
     prLink.addEventListener('mouseenter', () => {
-        cursorContent.style.width = '5rem';
-        cursorContent.style.height = '5rem';
         cursorContent.style.opacity = '1';
     });
 
     prLink.addEventListener('mouseleave', () => {
-        cursorContent.style.width = '5rem';
-        cursorContent.style.height = '5rem';
         cursorContent.style.opacity = '0';
     });
 });
