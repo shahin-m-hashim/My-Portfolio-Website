@@ -1,6 +1,10 @@
 window.onload = function () {
-    console.log(`The Page Has Loaded Successfully${"\n"}Welcome To My Portfolio`);
+    console.log(`The Page Loaded Successfully${"\n"}Welcome To My Portfolio`);
 }
+
+document.addEventListener('contextmenu', function (event) {
+    event.preventDefault(); // Prevent the default context menu from appearing
+});
 
 //custom mouse cursor
 let mouseCursor = document.querySelector(".bubble-cursor");
