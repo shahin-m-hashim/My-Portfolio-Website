@@ -10,7 +10,7 @@ let cursorX = 0;
 let cursorY = 0;
 
 // Smoothly update cursor position
-const smoothness = 0.1;
+const smoothness = 0.09;
 
 window.addEventListener('mousemove', updateCursor);
 
@@ -32,6 +32,22 @@ function updateCursor(e) {
     mouseCursor.style.top = `${centerY}px`;
 }
 
+// Mouse Cursor Hover Animation
+
+const navLinks = document.querySelectorAll('a,#resume-link,#sec4-prev-btn,#sec4-nxt-btn');
+
+navLinks.forEach((navLink) => {
+    navLink.addEventListener('mouseenter', () => {
+        mouseCursor.style.backdropFilter = 'blur(0.5px)';
+        mouseCursor.style.transform = 'scale(1.35)';
+    });
+
+    navLink.addEventListener('mouseleave', () => {
+        mouseCursor.style.backdropFilter = 'blur(10px)';
+        mouseCursor.style.transform = 'scale(1)';
+    });
+});
+
 //page navigation + smooth animation using jquery
 $(document).ready(function () {
     $("a#nav-link").click(function (event) {
@@ -41,10 +57,10 @@ $(document).ready(function () {
 
         // Define offset and padding values for specific sections
         const sectionOffsets = {
-            '#section-2': { offset: 120, padding: 300 },
-            '#section-3': { offset: 120, padding: 300 },
-            '#section-4': { offset: 120, padding: 300 },
-            '#section-5': { offset: 120, padding: 300 }
+            '#section-2': { offset: 100, padding: 300 },
+            '#section-3': { offset: 100, padding: 300 },
+            '#section-4': { offset: 100, padding: 300 },
+            '#section-5': { offset: 100, padding: 300 }
         };
 
         const { offset, padding } = sectionOffsets[targetId] || { offset: 60, padding: 10 };
