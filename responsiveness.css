@@ -164,6 +164,16 @@
 
 }
 
+@media (hover: none) {
+    body {
+        cursor: auto;
+    }
+
+    .bubble-cursor {
+        display: none;
+    }
+}
+
 @media only screen and (width<=1500px) {
     .section-1 {
         padding-bottom: 500px;
