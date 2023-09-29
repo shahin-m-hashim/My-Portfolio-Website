@@ -37,7 +37,6 @@ function updateCursor(e) {
 }
 
 // Mouse Cursor Hover Animation
-
 const navLinks = document.querySelectorAll('.navbar-brand,.nav-item,#sec4-prev-btn,#sec4-nxt-btn,.resume-link-btn,#github-link,#linkedin-link,#instagram-link,#email-me');
 
 navLinks.forEach((navLink) => {
@@ -103,13 +102,6 @@ window.addEventListener('scroll', () => {
         ) {
             document.body.style.backgroundColor = box.dataset.color;
         }
-    });
-});
-
-//navbar dropdown collapse
-$(document).ready(function () {
-    $("a.nav-link").click(function () {
-        $(".navbar-collapse").collapse("hide");
     });
 });
 
@@ -183,18 +175,18 @@ sr.reveal('.scroll-reveal', {
 
 //section 2 character
 sr.reveal('.scroll-reveal-character-heading', {
-    delay: 100,
+    delay: 200,
     reset: true,
-    duration: 400,
+    duration: 500,
     origin: 'top',
     easing: 'ease',
-    distance: '150px',
+    distance: '100px',
 });
 
 
 sr.reveal('#section-1', {
     delay: 10,
-    reset: false,
+    reset: true,
     duration: 700,
     origin: 'bottom',
     easing: 'ease-in',
@@ -205,7 +197,7 @@ sr.reveal('#section-1', {
 
 sr.reveal('#intro-text', {
     delay: 100,
-    reset: false,
+    reset: true,
     duration: 500,
     origin: 'bottom',
     easing: 'ease-in',
@@ -214,7 +206,7 @@ sr.reveal('#intro-text', {
 
 sr.reveal('#intro-name', {
     delay: 200,
-    reset: false,
+    reset: true,
     duration: 500,
     origin: 'bottom',
     easing: 'ease-in',
@@ -223,7 +215,7 @@ sr.reveal('#intro-name', {
 
 sr.reveal('#intro-description', {
     delay: 300,
-    reset: false,
+    reset: true,
     duration: 500,
     origin: 'bottom',
     easing: 'ease-in',
@@ -232,7 +224,7 @@ sr.reveal('#intro-description', {
 
 sr.reveal('#resume-link', {
     delay: 400,
-    reset: false,
+    reset: true,
     duration: 500,
     origin: 'bottom',
     easing: 'ease-in',
@@ -241,7 +233,7 @@ sr.reveal('#resume-link', {
 
 sr.reveal('#section-1-img-container', {
     delay: 100,
-    reset: false,
+    reset: true,
     duration: 500,
     origin: 'bottom',
     easing: 'ease-in',
@@ -252,29 +244,29 @@ sr.reveal('#section-1-img-container', {
 
 sr.reveal('#sec2-abt-me-p1', {
     delay: 100,
-    reset: false,
+    reset: true,
     duration: 300,
     origin: 'bottom',
     easing: 'ease-in',
-    distance: '100px',
+    distance: '50px',
 });
 
 sr.reveal('#sec2-abt-me-p2', {
     delay: 200,
-    reset: false,
+    reset: true,
     duration: 300,
     origin: 'bottom',
     easing: 'ease-in',
-    distance: '100px',
+    distance: '50px',
 });
 
 sr.reveal('#sec2-abt-me-p3', {
     delay: 300,
-    reset: false,
+    reset: true,
     duration: 300,
     origin: 'bottom',
     easing: 'ease-in',
-    distance: '100px',
+    distance: '50px',
 });
 
 //section 2 interests

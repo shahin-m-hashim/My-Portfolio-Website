@@ -17,107 +17,59 @@
     }
 }
 
-@media only screen and (orientation: portrait) {
-
-    header {
-        font-size: 2.5vw;
+@media (hover: none) {
+    body {
+        cursor: auto;
     }
 
-    /* Section 1 */
+    .bubble-cursor {
+        display: none;
+    }
+}
 
+@media only screen and (orientation: portrait) {
+
+    /* Section 1 */
     .introduction {
         grid-template-columns: 1fr;
+        row-gap: 20vw;
     }
 
     .introduction #intro-text {
-        font-size: 6vw;
-        padding-left: 0.7vw;
+        margin-bottom: -3vw;
+        margin-left: 1vw;
+        font-size: 10vw;
     }
 
     .introduction #intro-name {
-        font-size: 17vw;
+        font-size: 18vw;
+        -webkit-text-stroke: .5vw white;
+        animation: intro-name 15s linear infinite;
     }
 
     .introduction #intro-description h3 {
-        font-size: 3.8vw;
+        font-size: 4.2vw;
     }
 
     #resume-link {
-        margin-top: 80px;
+        margin-top: 5vw;
     }
 
     .resume-link-btn {
-        padding: 20px 25px;
+        padding: 1vw 1.5vw;
         font-size: 3vw;
     }
 
     #section-1-img-container {
         padding-top: 0;
-        margin: 100px 0;
+        justify-content: left;
     }
 
     #section-1-img-container img {
-        width: 90%;
-    }
-
-    /* section-2*/
-
-    #sec2-abt-txt {
-        font-size: 3.5vw;
-    }
-
-    #sec2-greeting-txt {
-        font-size: 6vw;
-        font-weight: 800;
-    }
-
-    .section-2 p {
-        font-size: 3vw;
-        padding-left: 5px;
-    }
-
-    #sec2-br-toggle-off {
-        display: none;
-    }
-
-    /* section 2 character */
-    .character-container #heading {
-        font-size: 7vw;
-        font-weight: 500;
-    }
-
-    .character {
-        margin-top: 20px;
-        grid-template-columns: 1fr;
-    }
-
-    #sec2-br-toggle-on {
-        display: block !important;
-    }
-
-    .character ul {
-        font-size: 4vw;
-        padding-left: 50px;
-    }
-
-    .character #description h1 {
-        font-size: 5vw !important;
-    }
-
-    .character #description div {
-        font-size: 3.6vw;
-    }
-
-    .lang h1 {
-        font-size: 6vw;
-    }
-
-    .lang div {
-        font-size: 4vw;
+        width: 100%;
     }
 
     /* Section 4 */
-
     .section-4 h1 {
         font-size: 6vw;
     }
@@ -126,14 +78,35 @@
         font-size: 4vw;
     }
 
-    /* Section 5 */
+    /* Section 4 Projects */
+    .numbertext {
+        font-size: 3vw;
+        padding: .3vw 1vw;
+    }
 
+    /* Next & previous buttons */
+    .prev,
+    .next {
+        padding: 1vw 1.5vw;
+        font-size: 3vw;
+    }
+
+    /* Caption text */
+    .pr-title {
+        font-size: 3.5vw;
+    }
+
+    /* Section 5 */
     .section-5 h1 {
         font-size: 7vw;
     }
 
     .section-5 h3 {
         font-size: 5vw;
+    }
+
+    .section-5 .end-msg {
+        margin-top: 5vw;
     }
 
     .section-5 .end-msg h4 {
@@ -159,18 +132,9 @@
 
     /* footer */
     footer h6 {
+        padding-top: 50vw;
+        padding-bottom: 2vw;
         font-size: 2vw;
-    }
-
-}
-
-@media (hover: none) {
-    body {
-        cursor: auto;
-    }
-
-    .bubble-cursor {
-        display: none;
     }
 }
 
@@ -179,11 +143,11 @@
     .section-2,
     .section-3,
     .section-4 {
-        padding: 17vw 0;
+        padding: 16.5vw 0;
     }
 
     .section-5 {
-        padding-top: 17vw;
+        padding-top: 16.5vw;
     }
 
     /* Section-2 */
@@ -191,82 +155,12 @@
         margin: 13vw 0;
     }
 
-    .personal-background {
-        display: grid;
-        row-gap: 80px;
-        column-gap: 0;
-        grid-template-columns: 1fr;
+    /* footer */
+    footer h6 {
+        padding-top: 48vw;
+        padding-bottom: 2vw;
     }
 
-    /* section 3 */
-    .section-3 {
-        grid-template-columns: 1fr;
-        column-gap: 0;
-        row-gap: 100px;
-    }
-
-    .section-3 .column-1 #row-1 h1 {
-        font-size: 6vw;
-    }
-
-    .section-3 .column-1 #row-1 h2 {
-        font-size: 4vw;
-    }
-
-    .section-3 .column-1 #row-1 h3 {
-        font-size: 3vw;
-    }
-
-    .section-3 .column-1 #row-1 h4 {
-        font-size: 2.5vw;
-    }
-
-    .section-3 .column-1 #row-1 ul {
-        font-size: 3.5vw;
-    }
-
-    .section-3 .column-1 #row-2 {
-        margin-top: 3vw;
-    }
-
-    .section-3 .column-1 #row-2 h1 {
-        font-size: 6vw;
-    }
-
-    .section-3 .column-1 #row-2 ol {
-        font-size: 2.7vw;
-    }
-
-    .section-3 .column-2 h1 {
-        font-size: 7vw;
-    }
-
-
-    /* sec3 skills progress bar */
-
-    .skills-container {
-        grid-template-columns: 1fr 1fr 1fr;
-    }
-
-    .skills-container .skill .name {
-        font-size: 0.8rem;
-    }
-
-    svg.radial-progress {
-        width: 50%;
-    }
-
-    /* Section 5 */
-    .section-5 .social-container {
-        padding: 150px 0;
-    }
-
-    .section-5 .social-container #github-link,
-    .section-5 .social-container #linkedin-link,
-    .section-5 .social-container #instagram-link {
-        width: 115px;
-        height: 115px;
-    }
 }
 
 @media only screen and (width<=1200px) {
@@ -280,40 +174,187 @@
     .section-5 {
         padding-top: 20vw;
     }
+
+    /* section-2*/
+    #sec2-abt-txt {
+        font-size: 2rem;
+    }
+
+    #sec2-greeting-txt {
+        font-size: 3rem;
+    }
+
+    /* section 2 character */
+    #sec2-br-toggle-off {
+        display: none;
+    }
+
+    .personal-background {
+        row-gap: 5vw;
+        grid-template-columns: 1fr;
+    }
+
+    /* Languages Known */
+    .lang h1 {
+        font-size: 3rem;
+    }
+
+    .lang div {
+        font-size: 2rem;
+    }
+
+    /* footer */
+    footer h6 {
+        padding-top: 98vw;
+        padding-bottom: 2vw;
+    }
 }
 
 @media only screen and (width<=1000px) {
 
-    header {
-        font-size: 3.2vw;
-    }
-
-    #resume-link {
-        margin-top: 50px;
-    }
-
-    .resume-link-btn {
-        padding: 10px 15px;
-        font-size: 4vw;
-    }
-
-}
-
-@media only screen and (width<=800px) {
-
     .section-2,
     .section-3,
     .section-4 {
-        padding: 35vw 0;
+        padding: 24vw 0;
     }
 
     .section-5 {
-        padding-top: 35vw;
+        padding-top: 24vw;
     }
 
-    main {
-        padding-top: 4%;
+    /* section-2*/
+    #sec2-greeting-txt {
+        font-size: 2.8rem;
     }
+
+    .section-2 .about-me p {
+        font-size: 3.5vw;
+    }
+
+    /* section 2 character */
+    .character-container {
+        margin: 18vw 0;
+    }
+
+    .character-container #heading {
+        font-size: 3.5rem;
+    }
+
+    .character {
+        margin-top: 0;
+        grid-template-columns: 1fr;
+    }
+
+    .character #description {
+        margin-top: 3.5vw;
+    }
+
+    .character #description h1 {
+        font-size: 2.3rem;
+    }
+
+    .character #description div {
+        font-size: 1.8rem;
+    }
+
+    .personal-background {
+        row-gap: 5vw;
+    }
+
+    /* Languages Known */
+    .lang h1 {
+        font-size: 2.7rem;
+    }
+
+    .lang div {
+        font-size: 1.7rem;
+    }
+
+    /* section 3 */
+    .section-3 {
+        grid-template-columns: 1fr;
+        column-gap: 0;
+        row-gap: 100px;
+    }
+
+    .section-3 .column-1 {
+        row-gap: 2.5vw;
+    }
+
+    .section-3 .column-1 #row-1 h1,
+    .section-3 .column-1 #row-2 h1,
+    .section-3 .column-2 h1 {
+        font-size: 3.8rem;
+    }
+
+    .section-3 .column-1 #row-1 h2 {
+        font-size: 2.4rem;
+    }
+
+    .section-3 .column-1 #row-1 h3,
+    .section-3 .column-1 #row-1 h4 {
+        font-size: 1.7rem;
+    }
+
+    .section-3 .column-1 #row-1 ul,
+    .section-3 .column-1 #row-2 ol {
+        padding-left: 1.3rem;
+        font-size: 3vw;
+    }
+
+    .section-3 .column-2 h1 {
+        margin-left: 0;
+    }
+
+    svg.radial-progress {
+        width: 50%;
+    }
+
+    /*Section 5 */
+    .section-5 h1 {
+        font-size: 10vw;
+    }
+
+    .section-5 h3 {
+        font-size: 8vw;
+    }
+
+    .section-5 .social-container {
+        row-gap: 15vw;
+        padding-top: 10vw;
+        padding-bottom: 20vw;
+        flex-direction: column;
+        justify-content: center;
+    }
+
+    .section-5 .social-container #github-link,
+    .section-5 .social-container #linkedin-link,
+    .section-5 .social-container #instagram-link {
+        width: 25vw;
+        height: 25vw;
+    }
+
+    .section-5 .end-msg h4 {
+        font-size: 5.5vw;
+        margin: 0;
+    }
+
+    .section-5 .end-msg h2 {
+        font-weight: 200;
+        font-size: 6vw;
+    }
+
+    /* section-5 email */
+    a#email-me {
+        font-size: 8vw;
+    }
+
+    a#email-me:hover {
+        font-size: 10vw;
+    }
+}
+
+@media only screen and (width<=800px) {
 
     /* navbar */
     .navbar-brand {
@@ -324,45 +365,85 @@
         padding: 3px;
     }
 
-    /* section 2 personal background */
-
-    .pb-scroll-out h1 {
-        font-size: 5vw;
+    .section-2,
+    .section-3,
+    .section-4 {
+        padding: 30vw 0;
     }
 
-    .pb-scroll-out #interest {
-        font-size: 4.5vw;
+    .section-5 {
+        padding-top: 30vw;
     }
 
-    .lang h1 {
-        font-size: 6vw;
+    header {
+        font-size: 1rem;
     }
 
-    .lang div {
-        font-size: 4.3vw;
+    /* section-2*/
+    #sec2-abt-txt {
+        font-size: 1.75rem;
     }
 
-    .pb-scroll-out .interests #grid-container {
-        padding-left: 0px;
+    #sec2-greeting-txt {
+        font-size: 2.45rem;
     }
 
-    .section-4 #slideshow-container {
-        padding-top: 30px;
+    /* section 2 character */
+    .character-container #heading {
+        font-size: 4rem;
     }
 
-    /* section 5 social links */
+    .character #description {
+        margin-top: 3vw;
+    }
 
-    .section-5 .social-container {
-        padding: 100px 0;
-        row-gap: 150px;
-        flex-direction: column;
-        align-items: center;
-        justify-content: center;
+    .character #list {
+        font-size: 2rem;
+    }
+
+    .character #description h1 {
+        font-size: 2.5rem;
+    }
+
+    .character #description div {
+        font-size: 1.8rem;
+    }
+
+    .pb-scroll-out h1:before {
+        width: 40%;
+    }
+
+    /* Section 3 */
+    .section-3 .column-1 #row-1 h1,
+    .section-3 .column-1 #row-2 h1,
+    .section-3 .column-2 h1 {
+        font-size: 3rem;
+    }
+
+    .section-3 .column-1 #row-1 h2 {
+        font-size: 1.6rem;
+    }
+
+    .section-3 .column-1 #row-1 h3,
+    .section-3 .column-1 #row-1 h4 {
+        font-size: 1.4rem;
+    }
+}
+
+@media only screen and (width<=700px) {
+
+    .section-2,
+    .section-3,
+    .section-4 {
+        padding: 36vw 0;
+    }
+
+    .section-5 {
+        padding-top: 36vw;
     }
 }
 
 @media only screen and (width<=500px) {
-
     .section-1 {
         padding-bottom: 0;
     }
@@ -370,21 +451,102 @@
     .section-2,
     .section-3,
     .section-4 {
-        padding: 60vw 0;
+        padding: 53vw 0;
     }
 
     .section-5 {
-        padding-top: 60vw;
+        padding-top: 53vw;
     }
 
-    #resume-link button {
-        font-size: 4vw;
-        padding: 5px 20px;
+    header {
+        font-size: .8rem;
+    }
+
+    /* Section 1*/
+    .introduction #intro-text {
+        margin-bottom: -2vw;
+    }
+
+    .resume-link-btn {
+        padding: .5vw 2vw;
+        font-size: 1rem;
+    }
+
+    /* section-2*/
+    .section-2 .about-me p {
+        font-size: 3.5vw;
+    }
+
+    /* section 2 character */
+    .character-container #heading {
+        font-size: 2.3rem;
+    }
+
+    .character #description {
+        margin-top: 4vw;
+    }
+
+    .character #list {
+        font-size: 1.5rem;
+    }
+
+    .character #description h1 {
+        font-size: 1.4rem;
+    }
+
+    .character #description div {
+        font-size: 1rem;
+    }
+
+    .personal-background {
+        row-gap: 10vw;
+    }
+
+    /* Languages Known */
+    .lang h1 {
+        font-size: 2rem;
+    }
+
+    .lang div {
+        font-size: 1rem;
+    }
+
+    .pb-scroll-out h1 {
+        font-size: 1.5rem;
+    }
+
+    .pb-scroll-out #interest {
+        font-size: 1.3rem;
+    }
+
+    /* Section 3 */
+    .section-3 .column-1 #row-1 h1,
+    .section-3 .column-1 #row-2 h1,
+    .section-3 .column-2 h1 {
+        font-size: 2rem;
+    }
+
+    .section-3 .column-1 #row-1 h2 {
+        font-size: 1.3rem;
+    }
+
+    .section-3 .column-1 #row-1 h3,
+    .section-3 .column-1 #row-1 h4 {
+        font-size: 1rem;
+    }
+
+    .section-3 .column-1 #row-1 ul {
+        font-size: 3.5vw;
+    }
+
+    .skills-container .skill .name {
+        font-size: small;
+        margin-bottom: -2vw;
     }
 
     /* footer */
     footer h6 {
-        font-size: 2.3vw;
+        font-size: 2.5vw;
     }
 }
 
@@ -395,15 +557,11 @@
     .section-2,
     .section-3,
     .section-4 {
-        padding: 70vw 0;
+        padding: 65vw 0;
     }
 
     .section-5 {
-        padding-top: 70vw;
-    }
-
-    main {
-        padding-top: 5%;
+        padding-top: 65vw;
     }
 
     /* navbar */
@@ -414,5 +572,116 @@
     .navbar-toggler-icon {
         padding: 8px;
         margin-top: -12px;
+    }
+
+    header {
+        font-size: .5rem;
+    }
+
+    /* Section 1 */
+
+    .introduction #intro-name {
+        animation: intro-name 20s linear infinite;
+    }
+
+    #resume-link {
+        margin-top: 0;
+    }
+
+    .resume-link-btn {
+        font-size: .6rem;
+    }
+
+    /* section-2*/
+    #sec2-abt-txt {
+        font-size: 1.4rem;
+    }
+
+    #sec2-greeting-txt {
+        font-size: 1.5rem;
+    }
+
+    .section-2 .about-me p {
+        font-size: 4vw;
+    }
+
+    /* section 2 character */
+    .character-container #heading {
+        font-size: 1.5rem;
+    }
+
+    .character #description {
+        margin-top: 10vw;
+    }
+
+    .character #list {
+        font-size: 1rem;
+    }
+
+    .character #description h1 {
+        font-size: .8rem;
+    }
+
+    .character #description div {
+        font-size: .6rem;
+    }
+
+    /* Languages Known */
+
+    .lang h1 {
+        font-size: 1.5rem;
+    }
+
+    .lang div {
+        font-size: .7rem;
+    }
+
+    .pb-scroll-out .interests #grid-container {
+        grid-template-columns: 1fr;
+    }
+
+    .pb-scroll-out #interest {
+        font-size: 1.5rem;
+    }
+
+    .pb-scroll-out h1:before {
+        width: 70%;
+    }
+
+    /* Section 3 */
+    .section-3 .column-1 #row-1 h1,
+    .section-3 .column-1 #row-2 h1,
+    .section-3 .column-2 h1 {
+        font-size: 1.6rem;
+    }
+
+    .section-3 .column-1 #row-1 h2 {
+        font-size: 1rem;
+    }
+
+    .section-3 .column-1 #row-1 h3,
+    .section-3 .column-1 #row-1 h4 {
+        font-size: .8rem;
+    }
+
+    .section-3 .column-1 #row-1 ul {
+        padding-left: 1rem;
+        font-size: 3.5vw;
+    }
+
+    .section-3 .column-1 #row-2 ol {
+        margin-top: 3vw;
+        padding-left: 1rem;
+        font-size: 3vw;
+    }
+
+    .skills-container .skill .name {
+        font-size: x-small;
+        margin-bottom: -3vw;
+    }
+
+    /* footer */
+    footer h6 {
+        font-size: 3vw;
     }
 }

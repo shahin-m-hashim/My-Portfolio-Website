@@ -25,6 +25,7 @@ button {
 body {
     cursor: none;
     padding: 50px 0;
+    padding-bottom: 10px;
     font-family: Roboto;
     color: white;
     background-color: var(--bg-color);
@@ -126,13 +127,12 @@ main {
 }
 
 /* header */
-
 header {
     text-align: center;
     color: white;
-    font-size: 1.7vw;
+    font-size: 1.3rem;
     font-weight: 400;
-    margin-bottom: 50px;
+    margin-bottom: 5vw;
 }
 
 .section-1 {
@@ -153,26 +153,27 @@ header {
 
 .introduction {
     display: grid;
-    grid-template-columns: 1.3fr 1fr;
+    grid-template-columns: 1fr 1fr;
+    column-gap: 5vw;
     color: #ccff00;
 }
 
 .introduction #intro-text {
-    padding-left: 0.5vw;
-    font-size: 4vw;
+    font-size: 3.5vw;
     font-weight: 500;
-    margin-bottom: -3.2vw;
+    margin-left: .5vw;
+    margin-bottom: -2.5vw;
 }
 
 .introduction #intro-name {
-    font-size: 11vw;
+    font-size: 10vw;
     font-weight: 700;
     color: transparent;
-    -webkit-text-stroke: 2px white;
+    -webkit-text-stroke: .25vw white;
     background: radial-gradient(circle, rgba(135, 221, 50, 1) 5%, rgba(194, 238, 16, 1) 50%, rgba(11, 227, 188, 1) 100%);
     -webkit-background-clip: text;
     background-position: 0;
-    animation: intro-name 5s linear infinite;
+    animation: intro-name 10s linear infinite;
 }
 
 @keyframes intro-name {
@@ -181,12 +182,8 @@ header {
     }
 }
 
-.introduction #intro-description {
-    padding-left: 5px;
-}
-
 .introduction #intro-description h3 {
-    font-size: 2.5vw;
+    font-size: 2.3vw;
     font-weight: 400;
     display: inline-flex;
     vertical-align: top;
@@ -216,8 +213,7 @@ header {
 }
 
 #resume-link {
-    margin-top: 30px;
-    margin-left: 5px;
+    margin-top: 2vw;
 }
 
 .resume-link-btn {
@@ -225,7 +221,7 @@ header {
     display: inline-flex;
     justify-content: center;
     align-items: center;
-    padding: 8px 12px;
+    padding: .5vw 1vw;
     font-size: 1.5vw;
     font-weight: 600;
     background-color: var(--hover-color);
@@ -262,36 +258,35 @@ header {
 
 #section-1-img-container {
     display: flex;
-    justify-content: center;
     align-items: center;
+    justify-content: right;
 }
 
 #section-1-img-container img {
-    width: 85%;
-    padding-top: 30px;
+    width: 90%;
+    padding-top: 2vw;
 }
 
 /* section-2*/
-
-.about-me {
-    color: #ccff00;
-}
-
 #sec2-abt-txt {
-    font-size: 3vw;
+    font-size: 3rem;
     font-weight: 400;
 }
 
 #sec2-greeting-txt {
-    font-size: 5vw;
+    font-size: 4rem;
     font-weight: 600;
+    margin-left: -0.25vw;
 }
 
-.section-2 p {
-    font-size: 2.5vw;
+.section-2 .about-me p {
+    font-size: 2.6vw;
     font-weight: 300;
-    padding-left: 10px;
-    padding-right: 15px;
+    text-align: justify;
+}
+
+#sec2-abt-me-p1 .name {
+    font-weight: 600;
 }
 
 /* section 2 character */
@@ -300,51 +295,64 @@ header {
 }
 
 .character-container #heading {
-    font-size: 6vw;
+    font-size: 4rem;
     font-weight: 500;
 }
 
 .character {
     display: grid;
-    margin-top: 60px;
-    grid-template-columns: 1.5fr 4fr;
+    margin-top: 3vw;
+    column-gap: 5vw;
+    grid-template-columns: 1fr 4fr;
 }
 
-.character ul {
-    font-size: 2.5vw;
-    padding-left: 50px;
+.character #list {
+    font-size: 2rem;
+}
+
+.character #description h1 {
+    font-size: 2.5rem;
 }
 
 .character #description div {
-    font-size: 2vw;
+    margin-top: 1.5vw;
+    text-align: justify;
+    font-size: 1.7rem;
 }
 
 .personal-background {
     display: grid;
-    column-gap: 50px;
+    column-gap: 3vw;
     grid-template-columns: 1fr 1fr;
 }
 
 /* Languages Known */
 
+.lang {
+    margin-top: -1.3vw;
+}
+
 .lang h1 {
-    margin-top: -20px;
-    font-size: 4vw;
+    font-size: 3.3rem;
 }
 
 .lang div {
-    font-size: 2.3vw;
+    font-size: 2rem;
     font-weight: 300;
 }
 
 /* Interests */
 
 .pb-scroll-out h1 {
-    font-size: 2.8vw;
+
+    margin: 0;
+    padding: 1vw 0;
+    color: black;
+    font-size: 2.6vw;
     transition: 0.5s;
-    padding-left: 10px;
     transform-origin: left;
     transform: scaleX(0);
+    padding-left: 1.2vw !important;
 }
 
 .pb-scroll-out h2,
@@ -357,13 +365,13 @@ header {
 .pb-scroll-out .interests #grid-container {
     display: grid;
     grid-template-columns: 1fr 1fr;
-    column-gap: 20px;
+    column-gap: 2vw;
 }
 
 .pb-scroll-out #interest {
-    padding: 20px 0;
-    padding-left: 10px !important;
-    font-size: 2.3vw;
+    padding: 1vw 0;
+    padding-left: 1.2vw !important;
+    font-size: 2.5vw;
     color: #ccff00;
 }
 
@@ -393,7 +401,7 @@ header {
 }
 
 .pb-scroll-out h1:before {
-    width: 40%;
+    width: 35%;
     transform-origin: right;
     background: #ecdc48;
 }
@@ -413,60 +421,62 @@ header {
 
 .section-3 {
     display: grid;
-    grid-template-columns: 1fr 1.2fr;
-    column-gap: 10px;
+    grid-template-columns: 1fr 1fr;
 }
 
-.section-3 .column-1 #row-1 h1 {
-    font-size: 4vw;
+.section-3 .column-1 #row-1 h1,
+.section-3 .column-1 #row-2 h1,
+.section-3 .column-2 h1 {
+    margin: 0;
+    font-size: 3.7rem;
+}
+
+.section-3 .column-1 {
+    display: grid;
+    row-gap: 1vw;
 }
 
 .section-3 .column-1 #row-1 h2 {
-    font-size: 2vw;
+    font-size: 2.4rem;
 }
 
 .section-3 .column-1 #row-1 h3,
 .section-3 .column-1 #row-1 h4 {
-    font-size: 1.5vw;
+    font-size: 1.2rem;
 }
 
 .section-3 .column-1 #row-1 ul {
-    font-size: 1.4vw;
-}
-
-.section-3 .column-1 #row-2 {
-    margin-top: 2vw;
-}
-
-.section-3 .column-1 #row-2 h1 {
-    font-size: 3vw;
+    margin: 0;
+    padding-left: 1.3rem;
+    font-size: 1.7vw;
 }
 
 .section-3 .column-1 #row-2 ol {
-    font-size: 1.3vw;
+    margin: 0;
+    margin-top: .5vw;
+    padding-left: 1.3rem;
+    font-size: 1.5vw;
 }
 
 .section-3 .column-2 h1 {
-    font-size: 4vw;
+    margin-left: 4vw;
 }
 
 /* sec3 skills progress bar */
-
 .skills-container {
     display: grid;
     grid-template-columns: 1fr 1fr 1fr;
-    row-gap: 30px;
+    row-gap: 3rem;
     text-align: center;
-    column-gap: 10px;
 }
-
 
 svg.radial-progress {
     padding: 0;
-    transform: rotate(-90deg);
-    width: 50%;
-    background-color: rgb(29, 29, 28);
+    margin: 0;
+    width: 40%;
     border-radius: 50%;
+    transform: rotate(-90deg);
+    background-color: rgb(29, 29, 28);
 }
 
 svg.radial-progress circle {
@@ -496,20 +506,32 @@ svg.radial-progress text {
 /* Section 4 */
 
 .section-4 h1 {
-    font-size: 4.5vw;
+    font-size: 4vw;
 }
 
 .section-4 h3 {
-    font-size: 3.5vw;
+    font-size: 3vw;
 }
 
 .section-4 #slideshow-container {
-    padding-top: 100px;
+    margin-top: 5vw;
 }
 
 .project-container {
     position: relative;
     margin: auto;
+}
+
+.numbertext {
+    color: #ff0000;
+    background-color: rgb(51, 255, 0);
+    background-size: 10px;
+    font-size: 2vw;
+    font-weight: bold;
+    padding: .1vw .5vw;
+    position: absolute;
+    top: 0;
+    left: 0;
 }
 
 #pr-link1,
@@ -530,18 +552,17 @@ svg.radial-progress text {
 .next {
     cursor: pointer;
     position: absolute;
-    top: 43%;
-    padding: 1vw;
+    top: 40%;
+    padding: .5vw .7vw;
     color: rgb(255, 255, 255);
     font-weight: bold;
-    font-size: 1.2vw;
+    font-size: 2vw;
     background-color: rgb(0, 128, 255);
     transition: 0.6s ease;
     user-select: none;
     text-decoration: none;
 }
 
-/* Position the next and previous buttons */
 .prev {
     left: 0;
 }
@@ -558,19 +579,6 @@ svg.radial-progress text {
     color: white;
     font-size: 2.5vw;
     font-weight: 500;
-    padding: 5px 0;
-}
-
-.numbertext {
-    color: #ff0000;
-    background-color: rgb(51, 255, 0);
-    background-size: 10px;
-    font-size: 2vw;
-    font-weight: bold;
-    padding: 0.5vw;
-    position: absolute;
-    top: 0;
-    left: 0;
 }
 
 /* The dots/bullets/indicators */
@@ -621,16 +629,18 @@ svg.radial-progress text {
 }
 
 .section-5 h1 {
-    font-size: 4.5vw;
+    margin: 0;
+    font-size: 4vw;
 }
 
 .section-5 h3 {
-    font-size: 3vw;
+    margin: 0;
+    font-size: 3.5vw;
 }
 
 .section-5 .social-container {
     display: flex;
-    padding: 200px 0;
+    padding: 15vw 0;
     align-items: center;
     justify-content: space-around;
 }
@@ -644,8 +654,8 @@ svg.radial-progress text {
     transform: perspective(1000px) rotate(-30deg) skew(25deg) translate(0, 0);
     transition: .5s;
     box-shadow: -30px 30px 10px rgba(0, 0, 0, .5);
-    width: 150px;
-    height: 150px;
+    width: 12vw;
+    height: 12vw;
 }
 
 .section-5 .social-container #github-link svg,
@@ -653,7 +663,7 @@ svg.radial-progress text {
 .section-5 .social-container #instagram-link svg {
     width: 100%;
     height: 100%;
-    padding: 10px;
+    padding: .5vw;
 }
 
 .section-5 .social-container #github-link:before,
@@ -663,8 +673,8 @@ svg.radial-progress text {
     position: absolute;
     top: 10px;
     left: -20px;
-    height: 100%;
     width: 20px;
+    height: 100%;
     background: #93a092;
     transition: .5s;
     transform: rotate(0deg) skewY(-45deg);
@@ -757,19 +767,18 @@ svg.radial-progress text {
 }
 
 /* section-5 end msg */
-
 .section-5 .end-msg h4 {
-    font-size: 4vw;
+    font-size: 3.5vw;
 }
 
 .section-5 .end-msg h2 {
     font-weight: 200;
-    font-size: 4.5vw;
+    font-size: 4vw;
 }
 
 /* section-5 email */
 a#email-me {
-    font-size: 5vw;
+    font-size: 4.5vw;
     font-weight: 500;
     background-image: linear-gradient(to right, #ff0000 10%, #00bbff 50%, #000dff 50%);
     background-size: 200% 100%;
@@ -805,7 +814,6 @@ a#email-me:hover::before {
 }
 
 /* footer */
-
 footer h6 {
     font-size: 1vw;
     text-align: center;
