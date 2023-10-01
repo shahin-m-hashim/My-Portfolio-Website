@@ -92,6 +92,16 @@ $(document).ready(function () {
     });
 });
 
+// manually collapse the dropdown
+document.querySelectorAll('.navbar-nav a.nav-link').forEach(function (element) {
+    element.addEventListener('click', function () {
+        var navbarCollapse = document.querySelector('.navbar-collapse');
+        if (navbarCollapse.classList.contains('show')) {
+            navbarCollapse.classList.remove('show');
+        }
+    });
+});
+
 //body background color transition
 const coloredBoxes = document.querySelectorAll('.colored-box');
 
